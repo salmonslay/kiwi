@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+    <script>
+        // Load the projects in-line to speed up things
+        let request = new XMLHttpRequest();
+        let data = undefined;
+        request.open("GET", "projects.json", true);
+        request.onload = function () {
+            if (request.status >= 200 && request.status < 400) {
+                data = JSON.parse(request.responseText);
+            }
+        }
+        request.send();
+    </script>
+
+    <meta charset="utf-8">
+    <title>Sofia Lindgren | Portfolio</title>
+    <meta name="title" content="Sofia Lindgren | Portfolio"/>
+    <meta name="description" content="Hi! I'm a backend developer with a passion for object-oriented design and system architecture, recently graduated in Computer and Systems Sciences from Stockholm University."/>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://sofia.kiwi/"/>
+    <meta property="og:title" content="Sofia Lindgren | Portfolio"/>
+    <meta property="og:description" content="Hi! I'm a backend developer with a passion for object-oriented design and system architecture, recently graduated in Computer and Systems Sciences from Stockholm University."/>
+    <meta property="og:image" content="/img/meta.png"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:src" content="/img/meta.png">
+    <meta name="theme-color" content="#CE4A5C">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+
+    <link rel="stylesheet" href="style/sajber.me.css">
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/marked.min.js"></script>
+    <script src="js/highlight.min.js"></script>
+    <script src="js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2db49cb13f.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="container">
+<a id="fork" title="View the source of this website." href="https://github.com/salmonslay/landing" target="_blank">
+    <i class="fa-solid fa-code-branch fa-lg"></i>
+</a>
+<div id="banner">
+    <h1>Hi! I'm
+        <span class="accent">Sofia Lindgren</span>
+    </h1>
+    <p>
+        I'm a backend developer with a passion for object-oriented design and system architecture,
+        recently graduated in Computer and Systems Sciences from Stockholm University.
+    </p>
+
+    <div class="social-icons">
+        <a class="icon" href="https://github.com/salmonslay" target="_blank">
+            <i class="fa-brands fa-github fa-2xl"></i>
+        </a>
+
+        <a class="icon" href="mailto:hi@sofia.kiwi" target="_blank">
+            <i class="fa-solid fa-envelope fa-2xl"></i>
+        </a>
+
+        <a class="icon" href="https://www.linkedin.com/in/lindgrensofias/" target="_blank">
+            <i class="fa-brands fa-linkedin fa-2xl"></i>
+        </a>
+
+        <a class="icon" href="https://stackoverflow.com/users/11420970" target="_blank">
+            <i class="fa-brands fa-stack-overflow fa-2xl"></i>
+        </a>
+    </div>
+
+    <hr>
+
+    <div class="navbar">
+        <a id="button-projects" class="nav-button active" onclick="setPage('projects')">Projects</a>
+        <a id="button-skills" class="nav-button" onclick="setPage('skills')">Skills</a>
+        <a id="button-courses" class="nav-button" onclick="setPage('courses')">Education</a>
+    </div>
+
+    <hr>
+</div>
+
+<div class="popup">
+    <div class="popup-content">
+        <div id="popup-content-html">
+        </div>
+        <a class="button" onclick="closePopup();">Close</a>
+    </div>
+</div>
+
+
+<div class="page" id="page-projects">
+    <div class="color-legend">
+        <div class="color-legend-item">
+            <div class="color-legend-item-color color-engine"></div>
+            <div class="color-legend-item-text">Engine</div>
+        </div>
+        <div class="color-legend-item">
+            <div class="color-legend-item-color color-language"></div>
+            <div class="color-legend-item-text">Main language(s)</div>
+        </div>
+        <div class="color-legend-item">
+            <div class="color-legend-item-color color-framework"></div>
+            <div class="color-legend-item-text">Framework(s)</div>
+        </div>
+    </div>
+
+    <!--<div class="icon-legend">
+        <
+        <div class="icon-legend-item">
+            <div class="icon-legend-item-text">
+                <i class="fas fa-star"></i>
+                Large/Special
+            </div>
+        </div>
+        <div class="icon-legend-item">
+            <div class="icon-legend-item-text">
+                <i class="fa-solid fa-graduation-cap"></i>
+                Made in school
+            </div>
+        </div>
+
+    </div>-->
+
+    <ol class="gallery" id="project-gallery">
+        <li id="loading">Loading...</li>
+    </ol>
+</div>
+
+<div class="page d-none" id="page-skills">
+    <div class="skill-page">
+        <h1>Languages</h1>
+        <ul>
+            <li>C#</li>
+            <li>C++</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>HTML / EJS / SCSS</li>
+            <li>JavaScript</li>
+            <li class="actual-language">Swedish - Native
+                <i title="It's a language. Deal with it." class="fa-regular fa-circle-question"></i>
+            </li>
+            <li class="actual-language">English - Proficient</li>
+        </ul>
+
+        <h1>Frameworks / engines</h1>
+        <ul>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>SDL2</li>
+            <li>MySQL</li>
+            <li>GraphQL</li>
+        </ul>
+
+        <h1>Tools</h1>
+        <ul>
+            <li>Git
+                <i title="I use a mix of command line and the integrated VCS in my IDEs." class="fa-regular fa-circle-question"></i>
+            </li>
+            <li>Unity</li>
+            <li>Rider / WebStorm / IntelliJ IDEA</li>
+            <li>Visual Studio / VSCode
+                <i title="I am currently using JetBrains IDEs for all my development, but I've used VS/VSC plenty in the past." class="fa-regular fa-circle-question"></i>
+            </li>
+            <li>Vegas Pro</li>
+            <li>Adobe Photoshop</li>
+            <li>Maya</li>
+            <li>SSH
+                <i title="Both my personal and server computer has OpenSSH on them." class="fa-regular fa-circle-question"></i>
+            </li>
+        </ul>
+
+        <h1>Other</h1>
+        <ul>
+            <li>Windows</li>
+            <li>Linux</li>
+            <li>Steamworks</li>
+        </ul>
+    </div>
+</div>
+<div class="page d-none" id="page-courses">
+    <div class="skill-page">
+        <i>This list is not complete; only courses that I feel are relevant to my work are listed. Grades and certificates can be provided upon request.</i>
+        <br><br>
+        <h1>Stockholm University</h1>
+        <h3>Computer and Systems Sciences - 2021-2024</h3>
+        <ul>
+            <li>Programming 1 (Java)</li>
+            <li>Programming 2 (Java)</li>
+            <li>Programming in C and C++</li>
+            <li>Object-Oriented Analysis and Design</li>
+            <li>Scientific Methodology and Communication</li>
+            <li>Game Based Learning (JS)</li>
+            <li>Database Methodology (SQL)</li>
+            <li>Human-computer interaction</li>
+            <li>Mobile Application Development (C#)</li>
+            <li>Scientific Writing</li>
+            <li>3D Rendering</li>
+            <li>Game Mechanics (C++) (15.0 hp)</li>
+            <li>AI Based Experience Design</li>
+            <li>Game Prototyping</li>
+            <li>Programming for internet</li>
+        </ul>
+
+        <h1>Courses at other universities</h1>
+        <ul>
+            <li>Programming with C++ G1N</li>
+            <li>Cybersecurity (3.0 hp)</li>
+            <li>Programming for Teachers (5.0 hp)</li>
+            <li>Linux for information professionals (5.0 hp)</li>
+            <li>Algorithmic Problem Solving (3.0 hp)</li>
+            <li>Elements of AI (3.0 hp)</li>
+            <li>Gender, Sexualities, and Bodies</li>
+        </ul>
+
+        <h1>Cybergymnasiet (High school)</h1>
+        <h3>Information & media technology - 2018-2021</h3>
+        <ul>
+            <li>Programming 1 (C#)</li>
+            <li>Programming 2 (C#)</li>
+            <li>Web development 1</li>
+            <li>Web development 2</li>
+            <li>Web server programming 1</li>
+            <li>Computers and network technology</li>
+            <li>Mathematics 1c</li>
+            <li>Mathematics 2c</li>
+            <li>Mathematics 3c</li>
+            <li>Technology 1</li>
+            <li>Technology – specialisation</li>
+            <li>Digital creativity 1</li>
+        </ul>
+
+        <i>
+            <p>University courses are worth 7.5hp if unless otherwise stated.</p>
+        </i>
+
+    </div>
+</div>
+
+</body>
+
+</html>

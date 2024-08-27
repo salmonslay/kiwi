@@ -1,0 +1,179 @@
+@media screen and (min-width: 768px) {
+  ol.gallery, {
+    list-style: none;
+    justify-items: center;
+    padding: 0 20px 100px 20px; // 100 to add some spacing under everything
+
+    li {
+      background: $foreground-color;
+      border-radius: 15px;
+      box-shadow: 4px 5px 5px rgb(0 0 0 / 10%);
+      -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      max-width: 1300px;
+
+      margin: 1.5em auto;
+
+      &:after {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+
+      &:hover {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        transform: translateY(-5px);
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      &:hover::after {
+        opacity: 1;
+      }
+
+      figure {
+        margin: 0;
+        align-items: center;
+        display: flex;
+        height: 285px;
+
+        .thumbnail-container {
+          width: 450px;
+          height: 100%;
+          position: relative;
+
+          .dots {
+            position: absolute;
+            bottom: 10px;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            left: 50%; transform: translateX(-50%);
+            margin: auto;
+            padding: 0.3em;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+
+            .dot {
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              background-color: white;
+              margin: 0 5px;
+              transition: all .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+              border: 1px solid white;
+
+              &:hover {
+                cursor: pointer;
+                background-color: $accent-color;
+              }
+
+              &.active {
+                background-color: $accent-color;
+              }
+            }
+          }
+
+
+          .arrow {
+            position: absolute;
+            bottom: 45%;
+            color: white;
+            z-index: 10;
+
+            width: 42px;
+            height: 42px;
+            border-radius: 25%;
+
+            transition: all .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+            &.right-arrow {
+              right: 10px;
+              text-shadow: -2px 1px 1px black;
+            }
+
+            &.left-arrow {
+              left: 10px;
+              text-shadow: 2px 1px 1px black;
+            }
+
+            &:hover {
+              cursor: pointer;
+              background-color: rgba($accent-color, .75);
+            }
+
+            &::before {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+
+          img {
+            border-radius: 15px;
+            display: block;
+            object-fit: cover;
+            height: 100%;
+            max-width: 450px;
+          }
+        }
+
+        figcaption {
+          height: 100%;
+          padding: 0.6rem 1rem;
+          position: relative;
+          box-sizing: border-box;
+
+          p, h3 {
+            margin: 0.5em 0;
+          }
+
+          h3 {
+            margin-top: 0;
+            font-weight: bold;
+            color: $accent-color;
+          }
+
+          p {
+            &.short-description {
+              display: none;
+            }
+
+            &.long-description {
+              white-space: pre-wrap;
+            }
+          }
+
+          .toolbar {
+            position: absolute;
+            bottom: 0;
+            padding-bottom: inherit;
+            width: auto;
+            right: 15px;
+            left: 15px;
+
+            .pills {
+              .pill {
+                display: inline-block;
+                padding: 0.2em 0.5em;
+                margin: 0.2em;
+                border-radius: 0.2em;
+                color: $foreground-color;
+                font-size: 0.8em;
+              }
+            }
+
+            .buttons {
+              padding: 5px 0 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

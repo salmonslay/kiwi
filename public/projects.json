@@ -1,0 +1,722 @@
+[
+  {
+    "title": "fruitwork (game engine)",
+    "description": "Game engine written in C++ using the Simple DirectMedia Layer library. Features a scene system, a physics engine and multiple test scenes.",
+    "longDescription": "fruitwork is a game engine written in C++ using the SDL library. It was developed for around a month during my C/C++ course at Stockholm University. Doing everything from scratch was a great learning experience, and making a new, even better version of the engine is something I would like to do in the future.\n\nThe engine features a scene system, a physics engine and multiple test scenes. It has a solid UI system with support for labels, input fields, buttons and more.",
+    "thumbnail": "img/fruitwork-1.webp",
+    "images": [
+      "img/fruitwork-2.webp",
+      "img/fruitwork-3.webp"
+    ],
+    "starred": true,
+    "school": true,
+    "markdown": "md/fruitwork.md",
+    "tags": {
+      "engine": [],
+      "language": [
+        "C++",
+        "Makefile"
+      ],
+      "framework": [
+        "SDL2"
+      ]
+    },
+    "links": [
+      {
+        "title": "GitHub",
+        "url": "https://github.com/salmonslay/fruitwork"
+      },
+      {
+        "title": "Ex. implementation",
+        "url": "https://youtu.be/iygYWxroH_8",
+        "icon": "fa-solid fa-film"
+      }
+    ]
+  },
+  {
+    "title": "SpaceLeek",
+    "description": "A charming and playful 3D-platformer with an emphasis on exploration and fast paced gameplay.",
+    "longDescription": "Space Leek is a charming and playful 3D-platformer with an emphasis on exploration and fast paced gameplay. The game is created in Unreal Engine 5 by me and eight friends, and took around two months of full-time work to complete.\n\nI have spent a lot of my time on the game's movement system, collectibles, the saving system and all the UI. A lot of my time was spent to make sure that the UI was responsive, and that it works well with both keyboard, controller or a mix of both.",
+    "thumbnail": "img/spaceleek/sl0.webp",
+    "images": [
+      "img/spaceleek/sl1.webp",
+      "img/spaceleek/sl2.webp",
+      "img/spaceleek/sl3.webp"
+    ],
+    "starred": true,
+    "school": true,
+    "tags": {
+      "engine": [
+        "Unreal Engine 5"
+      ],
+      "language": [
+        "C++",
+        "Blueprint"
+      ],
+      "framework": [
+      ]
+    },
+    "links": [
+      {
+        "title": "Trailer",
+        "url": "https://www.youtube.com/watch?v=mBcFcNi3Jtc"
+      },
+      {
+        "title": "Download",
+        "url": "https://hiveix.itch.io/space-leek"
+      }
+    ]
+  },
+  {
+    "title": "Dishooks",
+    "description": "C# wrapper for the Discord webhook API. Multi-platform support and 100% coverage; attachments, embeds, TTS and custom avatars / usernames.",
+    "longDescription": "A C# wrapper for the Discord webhook API. It has 100% coverage of the API, including attachments, embeds, TTS, custom avatars / usernames and message editing/deletion. Since everything is done through webhooks there is no requirement or need for a server or CDN.\n\nDishooks is a Unity asset and is available on the Unity Asset Store, with plans to maybe release it on NuGet in the future.",
+    "thumbnail": "img/dishooks.webp",
+    "markdown": "md/dishooks.md",
+    "starred": true,
+    "school": false,
+    "tags": {
+      "engine": [
+        "Unity"
+      ],
+      "language": [
+        "C#"
+      ],
+      "framework": [
+        "Json.NET"
+      ]
+    },
+    "links": [
+      {
+        "title": "Unity Asset Store",
+        "url": "https://assetstore.unity.com/packages/tools/network/dishooks-send-discord-messages-from-your-game-171381"
+      },
+      {
+        "title": "Documentation",
+        "url": "https://sajber.me/dishooks"
+      }
+    ]
+  },
+  {
+    "title": "Sonder",
+    "description": "An online 2.5D puzzle adventure where two players engage in collaborative puzzle solving and dynamic combat.",
+    "longDescription": "Experience an innovative co-op adventure where two players have to work together.\n\nDuring the two months of full-time work on Sonder I was responsible for all the UI/UX design and implementation, multiplayer, localization, Steamworks, achievements and some gameplay mechanics. The artwork in the gallery is made by [Nora Gate](https://www.artstation.com/noragate).\n\nAs of May 2024, Sonder has been <b>played by over 50 000 unique users on Steam</b>.",
+    "thumbnail": "img/sonder/banner.webp",
+    "images": [
+      "img/sonder/screenshot1.webp",
+      "img/sonder/screenshot2.webp",
+      "img/sonder/screenshot3.webp",
+      "img/sonder/screenshot4.webp",
+      "img/sonder/screenshot5.webp"
+    ],
+    "starred": true,
+    "school": true,
+    "tags": {
+      "engine": [
+        "Unreal Engine 5"
+      ],
+      "language": [
+        "C++",
+        "Blueprint"
+      ],
+      "framework": [
+        "Steamworks"
+      ]
+    },
+    "links": [
+      {
+        "title": "Steam",
+        "url": "https://store.steampowered.com/app/2692570/Sonder/"
+      },
+      {
+        "title": "GitHub",
+        "url": "https://github.com/salmonslay/Sonder"
+      }
+    ]
+  },
+  {
+    "title": "SUMMER Runway",
+    "description": "Player vs. player fashion game made with Unity where players are competing to mimic the \"currently trending\" outfit.",
+    "longDescription": "A player vs. player fashion game made with Unity where players are competing to mimic the \"currently trending\" outfit. The game was made for a game jam together with [Ella Olson](https://www.linkedin.com/in/ella-olsson-026142271/), and was made in around 48 hours.\n\nThe game supports local multiplayer with up to two players that could either play with controllers or on the same keyboard. Both the music and the amazing characters were created by Ella, while the remaining visuals and programming were done together. \n",
+    "thumbnail": "img/summer.webp",
+    "images": [
+      "img/summer/1.webp",
+      "img/summer/2.webp",
+      "img/summer/3.webp"
+    ],
+    "starred": true,
+    "school": false,
+    "tags": {
+      "engine": [
+        "Unity"
+      ],
+      "language": [
+        "C#"
+      ]
+    },
+    "links": [
+      {
+        "title": "View / download on itch.io",
+        "url": "https://lavendersalmon.itch.io/summer-runway"
+      },
+      {
+        "title": "Trailer",
+        "url": "https://youtu.be/iva1U4hRMaQ"
+      }
+    ]
+  },
+  {
+    "title": "Scareware",
+    "description": "Scareware is a game made for the 2023 DSV game jam. It's a WarioWare-inspired game where you have to complete a series of mini games that progressively get faster.",
+    "longDescription": "WarioWare-inspired game made for the 2023 DSV game jam together with [Nora Gate](https://www.artstation.com/noragate). It was made in Unity in roughly three days and contains ten unique mini games that can be played using only the arrow keys.\n\nI did all the programming in the project and had lots of fun while doing so. The game has a very robust object-oriented architecture and is easily expandable with new mini games - some of them only took a few minutes to implement once the drawn assets were ready!",
+    "thumbnail": "img/scareware/1.webp",
+    "images": [
+      "img/scareware/4.webp",
+      "img/scareware/2.webp",
+      "img/scareware/3.webp",
+      "img/scareware/5.webp"
+    ],
+    "starred": true,
+    "school": false,
+    "tags": {
+      "engine": [
+        "Unity"
+      ],
+      "language": [
+        "C#"
+      ]
+    },
+    "links": [
+      {
+        "title": "View / download on itch.io",
+        "url": "https://noroalia.itch.io/scareware"
+      }
+    ]
+  },
+  {
+    "title": "Galtaker",
+    "description": "Sokoban-inspired Unity game made for a game jam. Features localization with Crowdin, Steam achievements and an art gallery.",
+    "longDescription": "A a Sokoban-like puzzle game I made in Unity for the DSV game jam together with [Nora Gate](https://www.artstation.com/noragate) (we won 🥳). We have since then expanded the game with plans to release it on Steam.\n\nThe game features localization with Crowdin, Steam achievements through Steamworks and an art gallery, and has 15 levels. It has a built-in level editor, and the game is fully playable with a keyboard, controller or touch screen.",
+    "thumbnail": "img/galtaker.webp",
+    "images": [
+      "img/galtaker2.webp"
+    ],
+    "starred": true,
+    "school": false,
+    "tags": {
+      "engine": [
+        "Unity"
+      ],
+      "language": [
+        "C#"
+      ],
+      "framework": [
+        "Steamworks",
+        "Crowdin"
+      ]
+    },
+    "links": [
+      {
+        "title": "Album",
+        "url": "https://imgur.com/a/r75oyk4"
+      }
+    ]
+  },
+  {
+    "title": "svb!catch",
+    "description": "Web game based on osu!. Contains 200+ full beatmaps with music, 8 mods, online profiles and a custom difficulty system.",
+    "longDescription": "svb!catch is a browser rhythm game based made with plain JavaScript and an Express.js backend. Any beatmap available in osu! can be played in svb!catch, and the game contains five unique types of modifiers to spice up the gameplay.\n\nsvb!catch features online profiles via Discord OAuth 2.0, a custom difficulty system and online leaderboards. To optimize the game experience and performance, all thumbnails are automatically cropped and beatmaps are streamed from the server once you play or preview them.",
+    "thumbnail": "img/svb!catch.webp",
+    "images": [
+      "img/svb!catch-0.webp"
+    ],
+    "starred": true,
+    "school": false,
+    "tags": {
+      "engine": [
+        "Node.js"
+      ],
+      "language": [
+        "JavaScript"
+      ],
+      "framework": [
+        "Express",
+        "MySQL",
+        "OAuth 2.0"
+      ]
+    },
+    "links": [
+      {
+        "title": "View",
+        "url": "https://svb.sajber.me/catch"
+      },
+      {
+        "title": "GitHub",
+        "url": "https://github.com/salmonslay/SVB"
+      }
+    ]
+  },
+  {
+    "title": "SaltBot",
+    "description": "Discord bot made with discord.js used in over 10,000 guilds. Features 90+ commands, fictive battles, image manipulation and more.",
+    "longDescription": "SaltBot is a Discord bot made with discord.js. It has over 90 commands, focusing on fun/useful stuff like fictive battles, image manipulation, data retrieval and more. It was used in over 10,000 guilds and peaked around 60,000 commands processed daily, but was discontinued because of lack time.\n\nIt is written using TypeScript and has a modular command system, allowing for easy command creation and modification.",
+    "thumbnail": "img/saltbot.webp",
+    "starred": false,
+    "school": false,
+    "tags": {
+      "engine": [
+        "Node.js"
+      ],
+      "language": [
+        "TypeScript"
+      ],
+      "framework": [
+        "discord.js",
+        "jimp"
+      ]
+    },
+    "links": [
+      {
+        "title": "View commands",
+        "url": "https://bots.ondiscord.xyz/bots/539453930313351168"
+      }
+    ]
+  },
+  {
+    "title": "SVB",
+    "description": "News website based on SVT. Features online profiles with different privileged roles, game leaderboards and more.",
+    "longDescription": "SVB is a news website based on SVT, made during my web development and web server programming courses. It features a custom made user system with different privileged roles to publish articles, and uses Discord OAuth2 to allow users to login and authenticate.\n\nIt is created using Express.js and Vue, and uses a MySQL database to store user data.",
+    "thumbnail": "img/svb.webp",
+    "starred": false,
+    "school": true,
+    "tags": {
+      "engine": [
+        "Node.js"
+      ],
+      "language": [
+        "JavaScript"
+      ],
+      "framework": [
+        "Express",
+        "MySQL"
+      ]
+    },
+    "links": [
+      {
+        "title": "View",
+        "url": "https://svb.sajber.me"
+      },
+      {
+        "title": "GitHub",
+        "url": "https://github.com/salmonslay/SVB"
+      }
+    ]
+  },
+  {
+    "title": "SajberSim",
+    "description": "Visual novel engine made in Unity. Features a custom scripting language, Steam workshop support, a debugger and more.",
+    "longDescription": "SajberSim is a visual novel engine and browser made in Unity. It allows users to create full visual novels with custom characters, backgrounds, music and more using its custom scripting language.\n\nIt has Steam Workshop support and a built-in script debugger to ease the development process, and a built-in novel browser to allow users to easily download and play other people's novels.",
+    "thumbnail": "img/sajbersim.webp",
+    "images": [
+      "img/sajbersim-0.webp",
+      "img/sajbersim-1.webp",
+      "img/sajbersim-2.webp",
+      "img/sajbersim-3.webp"
+    ],
+    "school": true,
+    "tags": {
+      "engine": [
+        "Unity"
+      ],
+      "language": [
+        "C#"
+      ],
+      "framework": [
+        "Steamworks",
+        "Json.NET"
+      ]
+    },
+    "links": [
+      {
+        "title": "GitHub",
+        "url": "https://github.com/salmonslay/SajberSim"
+      },
+      {
+        "title": "Album",
+        "url": "https://imgur.com/a/wIY3a85"
+      }
+    ]
+  },
+  {
+    "title": "SajberRoyale",
+    "description": "3D battle royale game made in Unity. Features a custom map with 35+ unique rooms, online statistics and 100+ modelled assets.",
+    "longDescription": "SajberRoyale is a 3D battle royale game made in Unity using the Photon Unity Networking asset with support for up to 10 players per match. It was made in a group of three 3D artists and me as the programmer and took around 3 months to create.\n\nSajberRoyale contains a custom made weapon system, an emote wheel and online statistics shared with the [svb!catch](#project-svbcatch) API.",
+    "thumbnail": "img/sajberroyale.webp",
+    "starred": false,
+    "school": true,
+    "tags": {
+      "engine": [
+        "Unity"
+      ],
+      "language": [
+        "C#"
+      ],
+      "framework": [
+        "Photon"
+      ]
+    },
+    "links": [
+      {
+        "title": "GitHub",
+        "url": "https://github.com/LiterallyInc/SajberRoyale"
+      },
+      {
+        "title": "Trailer",
+        "url": "https://www.youtube.com/watch?v=o4A-ihfCpEE"
+      },
+      {
+        "title": "Development blog",
+        "url": "https://sajber.me/gymnasiearbete/"
+      },
+      {
+        "title": "Leaderboards",
+        "url": "https://svb.sajber.me/sajberroyale"
+      }
+    ]
+  },
+  {
+    "title": "IKIMONO",
+    "description": "Pet simulator for Android made in Unity. Includes minigames, offline needs and a custom saving system.",
+    "thumbnail": "img/ikimono.webp",
+    "hidden": true,
+    "starred": false,
+    "school": true,
+    "tags": {
+      "engine": [
+        "Unity"
+      ],
+      "language": [
+        "C#"
+      ],
+      "framework": [
+        "Json.NET"
+      ]
+    },
+    "links": [
+      {
+        "title": "Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.G3.IKIMONO"
+      },
+      {
+        "title": "GitHub",
+        "url": "https://github.com/salmonslay/IKIMONO"
+      }
+    ]
+  },
+  {
+    "title": "Digital Deception",
+    "description": "An educational '90s internet simulator where you work as an email moderator to detect junk emails.",
+    "thumbnail": "img/dd.webp",
+    "starred": false,
+    "hidden": true,
+    "school": true,
+    "tags": {
+      "engine": [
+      ],
+      "language": [
+        "JavaScript",
+        "SCSS"
+      ],
+      "framework": [
+      ]
+    },
+    "links": [
+      {
+        "title": "View",
+        "url": "https://people.dsv.su.se/~fali3459/digitaldeception/"
+      },
+      {
+        "title": "GitHub",
+        "url": "https://github.com/salmonslay/IKIMONO"
+      }
+    ]
+  },
+  {
+    "title": "SaltBot-Gacha",
+    "description": "Gacha module for SaltBot, inspired by Mudae. Features rolls, wishlisting, loot boxes and more. Discontinued and never published.",
+    "thumbnail": "img/saltbot-gacha.webp",
+    "starred": false,
+    "school": false,
+    "hidden": true,
+    "tags": {
+      "engine": [
+        "Node.js"
+      ],
+      "language": [
+        "JavaScript"
+      ],
+      "framework": [
+        "discord.js",
+        "MySQL"
+      ]
+    },
+    "links": [
+      {
+        "title": "GitHub",
+        "url": "https://github.com/salmonslay/SaltBot-Gacha"
+      }
+    ]
+  },
+  {
+    "title": "Jam Maestro",
+    "description": "Cooking/mixing-type game made in 2 days using Unity. It features online leaderboards, 17 ingredients and 6 character reactions.",
+    "thumbnail": "img/jammaestro.webp",
+    "starred": false,
+    "school": false,
+    "hidden": true,
+    "tags": {
+      "engine": [
+        "Unity",
+        "Node.js"
+      ],
+      "language": [
+        "C#",
+        "JavaScript"
+      ],
+      "framework": [
+        "Json.NET",
+        "Express",
+        "MySQL"
+      ]
+    },
+    "links": [
+      {
+        "title": "View",
+        "url": "https://github.com/salmonslay/jam-maestro"
+      },
+      {
+        "title": "GitHub",
+        "url": "https://github.com/salmonslay/jam-maestro"
+      }
+    ]
+  },
+  {
+    "title": "3DR",
+    "description": "A 3D environment made in Unreal Engine 5 for the [3D rendering](https://www.su.se/sok-kurser-och-program/ib150n-1.496964) course at Stockholm University.",
+    "thumbnail": "img/3dr.webp",
+    "school": true,
+    "hidden": true,
+    "tags": {
+      "engine": [
+        "Unreal Engine 5"
+      ],
+      "framework": [
+        "Quixel"
+      ]
+    },
+    "links": [
+      {
+        "title": "GitHub",
+        "url": "https://github.com/salmonslay/SU-3DR"
+      },
+      {
+        "title": "Album",
+        "url": "https://imgur.com/a/cerVOyi"
+      }
+    ]
+  },
+  {
+    "title": "Charge the beat",
+    "description": "Unity taiko rhythm game made for a game jam. Full support for osu!taiko beatmaps and up to 4 players.",
+    "thumbnail": "img/ctb.webp",
+    "starred": false,
+    "school": false,
+    "hidden": true,
+    "tags": {
+      "engine": [
+        "Unity"
+      ],
+      "language": [
+        "C#"
+      ],
+      "framework": [
+      ]
+    },
+    "links": [
+      {
+        "title": "GitHub",
+        "url": "https://github.com/salmonslay/taiko-flip"
+      }
+    ]
+  },
+  {
+    "title": "Galhooks",
+    "description": "A simple web server to automatically fetch, save and display Unity Cloud Builds.",
+    "thumbnail": "img/galhooks.webp",
+    "starred": false,
+    "school": false,
+    "hidden": true,
+    "tags": {
+      "engine": [
+        "Node.js"
+      ],
+      "language": [
+        "JavaScript",
+        "EJS"
+      ],
+      "framework": [
+        "Express",
+        "MySQL"
+      ]
+    },
+    "links": [
+      {
+        "title": "GitHub",
+        "url": "https://github.com/salmonslay/Galhooks"
+      }
+    ]
+  },
+  {
+    "title": "This website",
+    "description": "The website you're currently on. It's made with HTML, JS and SCSS, and the projects are saved with JSON.",
+    "thumbnail": "img/website.webp",
+    "starred": false,
+    "school": false,
+    "hidden": true,
+    "tags": {
+      "engine": [
+      ],
+      "language": [
+        "JavaScript",
+        "HTML",
+        "SCSS"
+      ],
+      "framework": [
+      ]
+    },
+    "links": [
+      {
+        "title": "View",
+        "url": "https://sajber.me"
+      },
+      {
+        "title": "GitHub",
+        "url": "https://github.com/salmonslay/landing"
+      }
+    ]
+  },
+  {
+    "title": "Interrupted Silence",
+    "description": "Tiny application that automatically plays a random sound at random intervals. Made for [babehog](https://www.twitch.tv/babehog).",
+    "thumbnail": "img/is.webp",
+    "starred": false,
+    "school": false,
+    "hidden": true,
+    "tags": {
+      "engine": [
+      ],
+      "language": [
+        "C#"
+      ],
+      "framework": [
+        ".NET",
+        "WinForms"
+      ]
+    },
+    "links": [
+      {
+        "title": "GitHub",
+        "url": "https://github.com/salmonslay/Sonya/tree/master/InterruptedSilence"
+      },
+      {
+        "title": "Download",
+        "url": "https://github.com/salmonslay/Sonya/releases"
+      }
+    ]
+  },
+  {
+    "title": "auto-starquiz",
+    "description": "A simple script that automatically answers questions in the MSP2 minigame Star Quiz. Monitors the game web socket and comparing data to a known answer list.",
+    "thumbnail": "img/auto-starquiz.webp",
+    "starred": false,
+    "school": false,
+    "hidden": true,
+    "tags": {
+      "engine": [
+      ],
+      "language": [
+        "JavaScript"
+      ],
+      "framework": [
+      ]
+    },
+    "links": [
+      {
+        "title": "GitHub",
+        "url": "https://github.com/salmonslay/auto-starquiz"
+      },
+      {
+        "title": "Video",
+        "url": "https://www.youtube.com/watch?v=2A0kKcAAZNs"
+      }
+    ]
+  },
+  {
+    "title": "mario-knows",
+    "description": "A silly Node.js server that hosts an image of Mario. If previewed on Discord it will look normal, but when opened in a browser it will be creepier and have the users IP address.",
+    "thumbnail": "img/mario-knows.webp",
+    "images": [
+      "img/mario-knows-0.webp"
+    ],
+    "starred": false,
+    "school": false,
+    "hidden": true,
+    "tags": {
+      "engine": [
+        "Node.js"
+      ],
+      "language": [
+        "JavaScript"
+      ],
+      "framework": [
+        "Express",
+        "jimp"
+      ]
+    },
+    "links": [
+      {
+        "title": "View",
+        "url": "https://sajber.me/mario.png"
+      },
+      {
+        "title": "GitHub",
+        "url": "https://github.com/salmonslay/mario-knows"
+      }
+    ]
+  },
+  {
+    "title": "ETT",
+    "description": "An online UNO card game made with Unity. Supports up to 9 players over internet and has Discord rich presence.",
+    "thumbnail": "img/ett.webp",
+    "starred": false,
+    "school": false,
+    "hidden": true,
+    "tags": {
+      "engine": [
+        "Unity"
+      ],
+      "language": [
+        "C#"
+      ],
+      "framework": [
+        "Photon"
+      ]
+    },
+    "links": [
+      {
+        "title": "GitHub",
+        "url": "https://github.com/salmonslay/ETT"
+      }
+    ]
+  }
+]
