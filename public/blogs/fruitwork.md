@@ -13,11 +13,11 @@ One of the first things I implemented was the scene system. I knew that I would 
 Having a solid scene system allowed me to easily create lots of testing scenes for my components which made development a lot easier. Below are two of my many test scenes; one for the ConfettiCannon component and one for the collision system. Yellow banana means rectangle collision, and red banana means pixel-perfect collision.
 
 <video width="40%" height="auto" autoplay loop>
-    <source src="img/fruitwork/confetti.mp4">
+    <source src="../img/fruitwork/confetti.mp4">
 </video>
 
 <video width="40%" height="auto" autoplay loop>
-<source src="img/fruitwork/collision.mp4">
+<source src="../img/fruitwork/collision.mp4">
 </video>
 
 ### Components

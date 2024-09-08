@@ -1,4 +1,11 @@
-# Dishooks
+---
+title: Dishooks - Send Discord messages from your Unity game
+date: 2022-05-10T19:39:59+02:00
+updated: 2024-08-27T22:40:49.746Z
+draft: false
+tags: [dishooks, project]
+summary: A blog post on how I created Dishooks, and how the maintenance and development has been going.
+---
 
 Dishooks is a C# wrapper for the Discord webhook API. It allows you to easily send messages to Discord channels using webhooks from a C# application. It is currently only available on the [Unity Asset Store](https://assetstore.unity.com/packages/tools/network/dishooks-send-discord-messages-from-your-game-171381), but is planned to maybe be released on NuGet in the future.
 
@@ -35,8 +42,7 @@ Dishooks is built with simplicity and OOP in mind, and is very easy to use. It s
 </code>
 </pre>
 
-![Example image from the code above](img/dishooks-example.png)
-
+![Example image from the code above](../img/dishooks-example.png)
 
 ## Development timeline
 
@@ -44,6 +50,6 @@ Dishooks started out in mid-2020 as a super simple wrapper using the default Sys
 
 Time went by, and in mid-2022 I got an email from a software engineer at Unity who was using Dishooks in a project. They required some features that Dishooks did not have at the time, namely support for sending local files as attachments. I looked into it, and it turned out to be a bit more complicated than I thought. I had to learn about HTTP multipart requests, and how to send files using them. Since Dishooks at the time only was able to send text content, namely `application/json`, I had to rewrite the networking code to support sending `multipart/form-data` content.
 
-A few days later, on July 7th, Dishooks 2.1.0 released with full support for sending attachments and using local files in embeds. I was very happy with the result, and I'm still very happy with it today! In December 2022 I started working on an online documentation using docFX, which is live at [https://sajber.me/dishooks/](https://sajber.me/dishooks/).
+A few days later, on July 7th, Dishooks 2.1.0 released with full support for sending attachments and using local files in embeds. I was very happy with the result, and I'm still very happy with it today! In December 2022 I started working on an online documentation using docFX, which is live at [https://sofia.kiwi/dishooks/](https://sofia.kiwi/dishooks/).
 
-As of April 2023, Dishooks has been purchased around **150** times, been marked as favorite **26** times, and **8** features, both smaller and larger ones have been added as a result of user requests. It's been a great journey so far where I have learned a lot!
+As of September 2024, Dishooks has been purchased around **200** times, and **8** features, both smaller and larger ones have been added as a result of user requests. It's been a great journey so far where I have learned a lot!
