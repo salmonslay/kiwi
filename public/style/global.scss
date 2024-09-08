@@ -1,0 +1,13 @@
+@import "colors";
+
+.italics {
+  font-style: italic;
+}
+
+.accent {
+  color: $accent-color;
+}
+
+.d-none {
+  display: none !important;
+}

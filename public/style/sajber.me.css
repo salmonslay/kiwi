@@ -9,7 +9,7 @@
     padding: 0 20px 100px 20px;
   }
   ol.gallery li {
-    background: #fff;
+    background: #ffefd9;
     border-radius: 15px;
     box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.1);
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -67,7 +67,7 @@
     padding: 0.2em 0.5em;
     margin: 0.2em;
     border-radius: 0.2em;
-    color: #fff;
+    color: #ffefd9;
     font-size: 0.8em;
   }
   ol.gallery li figure figcaption .buttons {
@@ -82,7 +82,7 @@
     margin: 0.2em;
     border-radius: 0.2em;
     background-color: #ce4a5c;
-    color: #fff;
+    color: #ffefd9;
     font-size: 0.8em;
     text-decoration: none;
   }
@@ -97,7 +97,7 @@
     padding: 0 20px 100px 20px;
   }
   ol.gallery li {
-    background: #fff;
+    background: #ffefd9;
     border-radius: 15px;
     box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.1);
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -229,42 +229,45 @@
     padding: 0.2em 0.5em;
     margin: 0.2em;
     border-radius: 0.2em;
-    color: #fff;
+    color: #ffefd9;
     font-size: 0.8em;
   }
   ol.gallery li figure figcaption .toolbar .buttons {
     padding: 5px 0 0 0;
   }
 }
-html {
-  height: 100%;
-  scrollbar-gutter: stable both-edges;
+.italics {
+  font-style: italic;
 }
 
 .accent {
   color: #ce4a5c;
 }
 
-.pronouns {
-  color: #5f5f5f;
-  font-weight: 400;
-  font-size: 1.1em;
-  margin: 0;
-}
-
 .d-none {
   display: none !important;
 }
 
+html {
+  height: 100%;
+  scrollbar-gutter: stable both-edges;
+}
+
 body {
   font: 17px "Source Sans Pro", Helvetica, Arial, sans-serif;
-  background-color: #f2f2f2;
-  color: #1f1f1f;
+  background-color: #fdf1e5;
+  color: #3c3c3b;
   margin: 2em 0;
 }
 body h1 {
   font-size: 2em;
   font-weight: bold;
+  margin: 0;
+}
+body h2 {
+  color: #a0a0a0;
+  font-weight: 400;
+  font-size: 1.1em;
   margin: 0;
 }
 body #page-projects {
@@ -297,7 +300,7 @@ body .skill-page {
 #banner .social-icons .icon {
   padding: 10px;
   margin: 10px;
-  color: #1f1f1f;
+  color: #3c3c3b;
 }
 #banner .social-icons .icon:hover {
   color: #ce4a5c;
@@ -323,7 +326,7 @@ body .skill-page {
 }
 
 .actual-language {
-  color: #5f5f5f;
+  color: #a0a0a0;
 }
 
 .color-legend {
@@ -372,9 +375,10 @@ a.button {
   margin: 0.2em;
   border-radius: 0.2em;
   background-color: #ce4a5c;
-  color: #fff;
+  color: #ffefd9;
   font-size: 0.8em;
   text-decoration: none;
+  min-width: 50px;
 }
 a.button:hover {
   background-color: #b43143;
@@ -404,7 +408,7 @@ a.button.popup-button {
   pointer-events: auto;
 }
 .popup .popup-content {
-  background-color: #f2f2f2;
+  background-color: #fdf1e5;
   padding: 20px;
   width: 95%;
   max-width: 1000px;
@@ -431,13 +435,20 @@ a.button.popup-button {
     right: 0.5em;
     top: 0.5em;
     padding: 1em;
-    color: #5f5f5f;
+    color: #a0a0a0;
   }
 }
 @media screen and (max-width: 767px) {
   #fork {
     display: none;
   }
+}
+
+footer {
+  text-align: center;
+  padding: 0.5em;
+  margin: 0;
+  color: #a0a0a0;
 }
 
 /*# sourceMappingURL=sajber.me.css.map */
