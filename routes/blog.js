@@ -1,18 +1,17 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const marked = require('marked');
+const matter = require('gray-matter');
 
 
 // year/month/id
-router.get('/:year/:month/:id', function (req, res, next) {
-    let year = req.params.year;
-    let month = req.params.month;
+router.get('/:id', function (req, res, next) {
     let id = req.params.id;
 
     // get blog markdown file
     let fs = require('fs');
     let path = require('path');
-    let blogPath = path.join(__dirname, '../public/blogs', year, month, id + '.md');
-    console.log(blogPath)
+    let blogPath = path.join(__dirname, '../public/blogs', id + '.md');
     fs.readFile(blogPath, 'utf8', function (err, data) {
         if (err) {
             res.render('error', {
@@ -22,8 +21,11 @@ router.get('/:year/:month/:id', function (req, res, next) {
                 }
             });
         } else {
+            const metadata = matter(data);
+            let html = marked.parse(metadata.content);
             res.render('blog', {
-                blog: data
+                html: html,
+                metadata: metadata,
             });
         }
     });

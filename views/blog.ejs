@@ -22,11 +22,10 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
 
     <link rel="stylesheet" href="/style/sajber.me.css">
-    <script src="js/jquery-3.6.4.min.js"></script>
-    <script src="js/marked.min.js"></script>
-    <script src="js/highlight.min.js"></script>
-    <script src="js/main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="/js/jquery-3.6.4.min.js"></script>
+    <script src="/js/marked.min.js"></script>
+    <script src="/js/highlight.min.js"></script>
     <script src="https://kit.fontawesome.com/2db49cb13f.js" crossorigin="anonymous"></script>
 </head>
 
@@ -35,42 +34,32 @@
     <i class="fa-solid fa-code-branch fa-lg"></i>
 </a>
 <div id="banner">
-    <h1>Hi! I'm
-        <span class="accent">Sofia Lindgren</span>
+    <h1><%= metadata.data.title %>
     </h1>
+    <h2>2024-08-09</h2>
     <p>
-        I'm a backend developer with a passion for object-oriented design and system architecture,
-        recently graduated in Computer and Systems Sciences from Stockholm University.
+        <%= metadata.data.summary %>
     </p>
-
-    <div class="social-icons">
-        <a class="icon" href="https://github.com/salmonslay" target="_blank">
-            <i class="fa-brands fa-github fa-2xl"></i>
-        </a>
-
-        <a class="icon" href="mailto:hi@sofia.kiwi" target="_blank">
-            <i class="fa-solid fa-envelope fa-2xl"></i>
-        </a>
-
-        <a class="icon" href="https://www.linkedin.com/in/lindgrensofias/" target="_blank">
-            <i class="fa-brands fa-linkedin fa-2xl"></i>
-        </a>
-
-        <a class="icon" href="https://stackoverflow.com/users/11420970" target="_blank">
-            <i class="fa-brands fa-stack-overflow fa-2xl"></i>
-        </a>
-    </div>
-
     <hr>
 
     <div class="navbar">
-        <a id="button-projects" class="nav-button active" onclick="setPage('projects')">Projects</a>
-        <a id="button-skills" class="nav-button" onclick="setPage('skills')">Skills</a>
-        <a id="button-courses" class="nav-button" onclick="setPage('courses')">Education</a>
+        <a id="button-projects" class="nav-button" href="/">Projects</a>
+        <a id="button-skills" class="nav-button" href="/#skills">Skills</a>
+        <a id="button-courses" class="nav-button" href="/#courses">Education</a>
+        <a id="button-courses" class="nav-button active" href="/blog">Blog</a>
     </div>
 
     <hr>
 </div>
+
+<div class="skill-page">
+    <%- html %>
+</div>
+
+<script>
+    hljs.highlightAll();
+</script>
+
 
 </body>
 
