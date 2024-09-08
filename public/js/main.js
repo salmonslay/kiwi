@@ -228,6 +228,8 @@ function openPopup(id) {
 
     // load markdown file (project.markdown)
     $.get(project.markdown, function (data) {
+        data = data.replace(/---[\s\S]*?---/, ""); // (metadata)
+
         div.html(marked.parse(data));
         hljs.highlightAll();
     }).fail(function (error) {
