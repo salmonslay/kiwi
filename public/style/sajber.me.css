@@ -1,4 +1,4 @@
-@import "github-dark-dimmed.css";
+@import "vs2015.min.css";
 @media screen and (max-width: 767px) {
   ol.gallery {
     display: grid;
