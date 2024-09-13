@@ -3,7 +3,7 @@
 
 <head>
     <script>
-        // Load the projects in-line to speed up things
+        // Load the projects & blogs in-line to speed up things
         let request = new XMLHttpRequest();
         let data = undefined;
         request.open("GET", "projects.json", true);
@@ -13,6 +13,16 @@
             }
         }
         request.send();
+
+        let blogRequest = new XMLHttpRequest();
+        let blogData = undefined;
+        blogRequest.open("GET", "api/posts?sort=date", true);
+        blogRequest.onload = function () {
+            if (blogRequest.status >= 200 && blogRequest.status < 400) {
+                blogData = JSON.parse(blogRequest.responseText);
+            }
+        }
+        blogRequest.send();
     </script>
 
     <meta charset="utf-8">
@@ -34,11 +44,11 @@
 
     <link rel="icon" href="/favicon.ico" sizes="any">
 
-    <link rel="stylesheet" href="style/sajber.me.css">
-    <script src="js/jquery-3.6.4.min.js"></script>
-    <script src="js/marked.min.js"></script>
-    <script src="js/highlight.min.js"></script>
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="/style/sajber.me.css">
+    <script src="/js/jquery-3.6.4.min.js"></script>
+    <script src="/js/marked.min.js"></script>
+    <script src="/js/highlight.min.js"></script>
+    <script src="/js/main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2db49cb13f.js" crossorigin="anonymous"></script>
 </head>
@@ -80,7 +90,7 @@
         <a id="button-projects" class="nav-button active" onclick="setPage('projects')">Projects</a>
         <a id="button-skills" class="nav-button" onclick="setPage('skills')">Skills</a>
         <a id="button-courses" class="nav-button" onclick="setPage('courses')">Education</a>
-        <a id="button-courses" class="nav-button" onclick="alert('It\'s on its way!');">Blog</a>
+        <a id="button-blog" class="nav-button" onclick="setPage('blog')">Blog</a>
         <!--a id="button-courses" class="nav-button" onclick="alert('It\'s on its way!');">Publications</a-->
     </div>
 
@@ -130,6 +140,12 @@
     </div>-->
 
     <ol class="gallery" id="project-gallery">
+        <li id="loading">Loading...</li>
+    </ol>
+</div>
+
+<div class="page" id="page-blog">
+    <ol class="gallery" id="blog-gallery">
         <li id="loading">Loading...</li>
     </ol>
 </div>

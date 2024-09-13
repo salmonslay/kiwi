@@ -467,4 +467,9 @@ footer {
   color: #7c4170;
 }
 
+.blog-gallery-entry a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=sajber.me.css.map */

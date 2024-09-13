@@ -13,16 +13,26 @@ window.onload = function () {
     });
 
     // Wait for the projects to be loaded (data)
-    let attempts = 0;
-    const readyListener = () => {
+    let projectAttempts = 0;
+    const projectReadyListener = () => {
         if (typeof data !== 'undefined') {
             return loadProjects();
         } else {
-            attempts++;
+            projectAttempts++;
         }
-        return setTimeout(readyListener, attempts < 200 ? 25 : 250);
+        return setTimeout(projectReadyListener, projectAttempts < 200 ? 25 : 250);
     };
-    readyListener();
+    projectReadyListener();
+    let blogAttempts = 0;
+    const blogReadyListener = () => {
+        if (typeof blogData !== 'undefined') {
+            return loadBlogs();
+        } else {
+            blogAttempts++;
+        }
+        return setTimeout(blogReadyListener, blogAttempts < 200 ? 25 : 250);
+    };
+    blogReadyListener();
 };
 
 /**
@@ -166,6 +176,40 @@ function loadProjects() {
         projects[projectId] = project;
     });
     document.getElementById("loading").remove();
+}
+
+function loadBlogs() {
+    blogData.posts.forEach(blog => {
+        console.log(blog)
+        let blogHtml =
+            `
+                    <li class="blog-gallery-entry" id="project-${blog.slug}" style="max-width: 1000px!important;">
+                        <a href="/blog/${blog.slug}">
+                            <figure>
+                                <div class="thumbnail-container">
+                                    <img class="thumbnail" src="${blog.metadata.thumbnail}" alt="${blog.metadata.title}">
+                                </div>
+                                <figcaption>
+                                    <h3>
+                                        ${blog.metadata.title} 
+                                    </h3> 
+                                    <p class="short-description">${blog.metadata.summary}</p>
+                                    <p class="long-description">${blog.metadata.summary}</p>
+                                    <div class="toolbar">
+    <!--                                    <div class="buttons">
+                                            <a class="button" href="/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>Read</a>
+                                        </div>-->
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    `
+
+        document.getElementById("blog-gallery").innerHTML += blogHtml;
+    });
+    document.getElementById("loading").remove();
+
 }
 
 function mdLinksToHtml(md) {

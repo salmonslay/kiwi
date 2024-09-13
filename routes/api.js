@@ -189,12 +189,14 @@ router.get('/posts/:id', function (req, res, next) {
             metadata.data.author = metadata.data.author || "Sofia Lindgren";
             metadata.data.summary = metadata.data.summary || ""; // no summary needed, just leave empty
             metadata.data.tags = metadata.data.tags || [];
+            metadata.data.thumbnail = metadata.data.thumbnail || "/img/meta.png";
 
             res.status(200).json({
                 success: true,
                 metadata: metadata.data,
                 html: includeHtml ? html : "",
                 md: includeMd ? metadata.content : "",
+                slug: id,
             });
         });
     } else {
