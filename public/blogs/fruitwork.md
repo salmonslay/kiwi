@@ -1,4 +1,11 @@
-# fruitwork
+---
+title: fruitwork
+date: 2023-04-06T12:46:31+00:00
+updated: 2023-10-06T12:46:31+00:00
+draft: false
+author: Sofia Lindgren
+tags: [fruitwork, project, sdl, c++]
+---
 
 fruitwork is a game engine written in C++ using the Simple DirectMedia Layer (SDL) library. It took around a month to write and was made during my C/C++ course at Stockholm University. I've always enjoyed low-level programming and wanted to try my hand at making a game engine, so this was a great opportunity to do so!
 

@@ -1,7 +1,7 @@
 ---
 title: # Mimicking a user's own setup in a game 
 date:    2024-08-30T18:21:49Z
-draft: false
+draft: true
 tags: [gamedev, project]
 summary:
 ---

@@ -3,6 +3,7 @@ title: Dishooks - Send Discord messages from your Unity game
 date: 2022-05-10T19:39:59+02:00
 updated: 2024-08-27T22:40:49.746Z
 draft: false
+author: Sofia Lindgren
 tags: [dishooks, project]
 summary: A blog post on how I created Dishooks, and how the maintenance and development has been going.
 ---
