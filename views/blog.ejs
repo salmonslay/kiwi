@@ -3,18 +3,18 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sofia Lindgren | Portfolio</title>
-    <meta name="title" content="Sofia Lindgren | Portfolio"/>
-    <meta name="description" content="Hi! I'm a backend developer with a passion for object-oriented design and system architecture, recently graduated in Computer and Systems Sciences from Stockholm University."/>
+    <title><%= metadata.author %> | <%= metadata.title %></title>
+    <meta name="title" content="<%= metadata.author %> | <%= metadata.title %>"/>
+    <meta name="description" content="<%=metadata.summary%>"/>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://sofia.kiwi/"/>
-    <meta property="og:title" content="Sofia Lindgren | Portfolio"/>
-    <meta property="og:description" content="Hi! I'm a backend developer with a passion for object-oriented design and system architecture, recently graduated in Computer and Systems Sciences from Stockholm University."/>
-    <meta property="og:image" content="/img/meta.png"/>
+    <meta property="og:url" content="https://sofia.kiwi/blog/<%= slug %>"/>
+    <meta property="og:title" content="<%= metadata.author %> | <%= metadata.title %>"/>
+    <meta property="og:description" content="<%=metadata.summary%>"/>
+    <meta property="og:image" content="<%=metadata.thumbnail%>"/>
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image:src" content="/img/meta.png">
+    <meta name="twitter:image:src" content="<%=metadata.thumbnail%>">
     <meta name="theme-color" content="#CE4A5C">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,22 +30,22 @@
 </head>
 
 <body class="container">
-<a id="fork" title="View the source of this website." href="https://github.com/salmonslay/landing" target="_blank">
+<a id="fork" title="View the source of this blog post." href="https://github.com/salmonslay/kiwi/tree/master/public/blogs/<%= slug %>.md" target="_blank">
     <i class="fa-solid fa-code-branch fa-lg"></i>
+</a>
+<a id="home-icon" title="Return to main page." href="/#blog">
+    <i class="fa-solid fa-house fa-lg"></i>
 </a>
 <div class="skill-page-wide">
 
     <div id="banner-fill" class="force-align-items-left">
-        <h1><%= metadata.data.title %>
+        <h1><%= metadata.title %>
         </h1>
-        <h2><%= metadata.data.date.toLocaleDateString('en-US', {
+        <h2 class="subtitle"><%=metadata.author%>, <%= new Date(metadata.date).toLocaleDateString('en-US', {
                 year: 'numeric',
                 month: 'short'
             }); %></h2>
-        <p>
-            <%= metadata.data.summary %>
-        </p>
-        <h6 class="no-margin">Tags: <%= metadata.data.tags.join(', ') %></h6>
+        <h6 class="no-margin">Tags: <%= metadata.tags.join(', ') %></h6>
         <hr>
     </div>
 
@@ -54,19 +54,19 @@
     <hr>
     <div class="footer">
         <p>
-            Written by Sofia Lindgren in <%= metadata.data.date.toLocaleDateString('en-US', {
+            Written by <%= metadata.author %> in <%= new Date(metadata.date).toLocaleDateString('en-US', {
                 year: 'numeric',
                 month: 'short'
             }); %>.
 
-            <% if(metadata.data.date !== metadata.data.updated) { %>
-                Updated <%= metadata.data.updated.toLocaleDateString('en-US', {
+            <% if(metadata.date !== metadata.updated) { %>
+                Updated <%= new Date(metadata.updated).toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'short'
                 }); %>.
             <% } %>
         </p>
-        <a href="/" class="button">Back to the main page</a>
+        <a href="/#blog" class="button">Back to the main page</a>
 
 
     </div>

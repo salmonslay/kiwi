@@ -273,11 +273,8 @@ body h1 {
   font-weight: bold;
   margin: 0;
 }
-body h2 {
+body h2, body h3, body h4, body h5, body h6 {
   color: #7c4170;
-  font-weight: 400;
-  font-size: 1.1em;
-  margin: 0;
 }
 body #page-projects {
   max-width: 90%;
@@ -291,6 +288,20 @@ body .skill-page, body .skill-page-wide {
 body .skill-page-wide {
   max-width: 1000px;
 }
+body .skill-page pre, body .skill-page-wide pre {
+  overflow-x: auto;
+  padding: 0 1em;
+}
+body .skill-page img, body .skill-page-wide img {
+  max-width: 100%;
+}
+body .skill-page .subtitle, body .skill-page-wide .subtitle {
+  font-size: 0.8em;
+  color: #59294f;
+  opacity: 80%;
+  margin: 0.5em 0;
+}
+
 #banner, #banner-fill {
   display: flex;
   flex-direction: column;
@@ -456,6 +467,21 @@ a.button.popup-button {
 }
 @media screen and (max-width: 767px) {
   #fork {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #home-icon {
+    position: absolute;
+    left: 0.5em;
+    top: 0.5em;
+    padding: 1em;
+    color: #7c4170;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #home-icon {
     display: none;
   }
 }

@@ -51,6 +51,11 @@ function setPage(page) {
     p.classList.remove("d-none");
     b.classList.add("active");
 
+    if (page !== "projects")
+        history.replaceState(undefined, undefined, "#" + page);
+    else
+        history.replaceState(undefined, undefined, window.location.pathname);
+
     // hide other pages
     let pages = document.getElementsByClassName("page");
     for (let i = 0; i < pages.length; i++) {
@@ -180,7 +185,12 @@ function loadProjects() {
 
 function loadBlogs() {
     blogData.posts.forEach(blog => {
-        console.log(blog)
+
+        let pillHtml = "";
+        blog.metadata.tags.forEach(tag => {
+            pillHtml += `<span class="pill color-framework">${tag}</span>`;
+        });
+
         let blogHtml =
             `
                     <li class="blog-gallery-entry" id="project-${blog.slug}" style="max-width: 1000px!important;">
@@ -196,9 +206,13 @@ function loadBlogs() {
                                     <p class="short-description">${blog.metadata.summary}</p>
                                     <p class="long-description">${blog.metadata.summary}</p>
                                     <div class="toolbar">
+                                    <div class="pills">
+                                        ${pillHtml}
+                                    </div>
     <!--                                    <div class="buttons">
                                             <a class="button" href="/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>Read</a>
                                         </div>-->
+                                        <a class="popup-button button">Read more...</a>
                                     </div>
                                 </figcaption>
                             </figure>
