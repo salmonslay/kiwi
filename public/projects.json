@@ -71,7 +71,7 @@
     "title": "Dishooks",
     "description": "C# wrapper for the Discord webhook API. Multi-platform support and 100% coverage; attachments, embeds, TTS and custom avatars / usernames.",
     "longDescription": "A C# wrapper for the Discord webhook API. It has 100% coverage of the API, including attachments, embeds, TTS, custom avatars / usernames and message editing/deletion. Since everything is done through webhooks there is no requirement or need for a server or CDN.\n\nDishooks is a Unity asset and is available on the Unity Asset Store, with plans to maybe release it on NuGet in the future.",
-    "thumbnail": "img/dishooks.webp",
+    "thumbnail": "img/dishooks/cover.png",
     "markdown": "blogs/dishooks.md",
     "starred": true,
     "school": false,

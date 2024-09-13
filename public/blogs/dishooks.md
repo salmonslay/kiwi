@@ -1,49 +1,49 @@
 ---
-title: Dishooks - Send Discord messages from your Unity game
+title: Creation and maintenance of Dishooks
 date: 2022-05-10T19:39:59+02:00
 updated: 2024-08-27T22:40:49.746Z
 draft: false
 author: Sofia Lindgren
 tags: [dishooks, project]
-summary: A blog post on how I created Dishooks, and how the maintenance and development has been going.
+summary: A blog post on how I created Dishooks, how the maintenance and development has been going and some features and challenges I've faced.
+thumbnail: /img/dishooks/cover.png
 ---
 
 Dishooks is a C# wrapper for the Discord webhook API. It allows you to easily send messages to Discord channels using webhooks from a C# application. It is currently only available on the [Unity Asset Store](https://assetstore.unity.com/packages/tools/network/dishooks-send-discord-messages-from-your-game-171381), but is planned to maybe be released on NuGet in the future.
 
 Dishooks is built with simplicity and OOP in mind, and is very easy to use. It supports full coverage over the API, including embeds, TTS, attachments and customizable avatars and usernames.
 
-<pre style="background-color: #22272e;">
-<code class="language-cs">
-    // Create a webhook
-    Webhook webhook = new Webhook
+<pre>
+<code class="language-cs">// Create the webhook
+Webhook webhook = new Webhook
     {
         URL = Dishook.DefaultUrl,
         Username = "Dishooks!",
-        AvatarUrl = "https://i.imgur.com/Ukqoy8s.png"
+        AvatarUrl = "https://sofia.kiwi/dishooks/img/logo.png",
     };
-    
-    // Create an embed
-    Embed embed = new Embed
+
+// Create an embed
+Embed embed = new Embed
     {
         Color = Color.magenta,
-        Author = new Author("Fabian", "https://i.imgur.com/k5lNAWS.png"),
+        Author = new Author("Sofia", "https://sofia.kiwi/dishooks/img/avatar.png"),
         Title = "Welcome to Dishooks!",
         Description = "Create complex rich embeds with ease.",
         Fields = new[]
         {
-            new Field("Everything supported!", "Fields, images, texts, footers, timestamps, etc."),
+            new Field("Everything supported!", "Fields, images, texts, footers, timestamps, and more."),
         },
     };
-    
-    // Attach the embed to the webhook
-    webhook.AddEmbed(embed);
-    
-    // Send the webhook to Discord
-    webhook.Send();
+
+// Attach the embed to the webhook
+webhook.AddEmbed(embed);
+
+// Send the webhook to Discord
+webhook.Send();
 </code>
 </pre>
 
-![Example image from the code above](../img/dishooks-example.png)
+![Result of the code above](../img/dishooks/embed.png)
 
 ## Development timeline
 
@@ -53,4 +53,14 @@ Time went by, and in mid-2022 I got an email from a software engineer at Unity w
 
 A few days later, on July 7th, Dishooks 2.1.0 released with full support for sending attachments and using local files in embeds. I was very happy with the result, and I'm still very happy with it today! In December 2022 I started working on an online documentation using docFX, which is live at [https://sofia.kiwi/dishooks/](https://sofia.kiwi/dishooks/).
 
-As of September 2024, Dishooks has been purchased around **200** times, and **8** features, both smaller and larger ones have been added as a result of user requests. It's been a great journey so far where I have learned a lot!
+As of September 2024, Dishooks has been purchased around
+
+*
+
+*200
+** times, and
+
+*
+
+*8
+** features, both smaller and larger ones have been added as a result of user requests. It's been a great journey so far where I have learned a lot!

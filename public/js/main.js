@@ -212,7 +212,6 @@ function loadBlogs() {
     <!--                                    <div class="buttons">
                                             <a class="button" href="/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>Read</a>
                                         </div>-->
-                                        <a class="popup-button button">Read more...</a>
                                     </div>
                                 </figcaption>
                             </figure>
