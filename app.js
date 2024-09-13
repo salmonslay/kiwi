@@ -20,8 +20,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 let indexRouter = require('./routes/index');
 let blogRouter = require('./routes/blog');
+let apiRouter = require('./routes/api');
 app.use('/', indexRouter);
 app.use('/blog', blogRouter);
+app.use('/api', apiRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
