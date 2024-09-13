@@ -3,6 +3,9 @@ const router = express.Router();
 const marked = require('marked');
 const matter = require('gray-matter');
 
+router.get('/', function (req, res, next) {
+    res.redirect('/#blog');
+});
 
 // year/month/id
 router.get('/:id', function (req, res, next) {
@@ -23,6 +26,15 @@ router.get('/:id', function (req, res, next) {
         } else {
             const metadata = matter(data);
             let html = marked.parse(metadata.content);
+
+            metadata.data.title = metadata.data.title || "No title";
+            metadata.data.date = metadata.data.date || new Date(0);
+            metadata.data.updated = metadata.data.updated || metadata.data.date;
+            metadata.data.draft = metadata.data.draft || true; // only explicitly set to false if not a draft
+            metadata.data.author = metadata.data.author || "Sofia Lindgren";
+            metadata.data.summary = metadata.data.summary || ""; // no summary needed, just leave empty
+            metadata.data.tags = metadata.data.tags || [];
+
             res.render('blog', {
                 html: html,
                 metadata: metadata,
