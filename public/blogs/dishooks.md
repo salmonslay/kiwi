@@ -53,14 +53,4 @@ Time went by, and in mid-2022 I got an email from a software engineer at Unity w
 
 A few days later, on July 7th, Dishooks 2.1.0 released with full support for sending attachments and using local files in embeds. I was very happy with the result, and I'm still very happy with it today! In December 2022 I started working on an online documentation using docFX, which is live at [https://sofia.kiwi/dishooks/](https://sofia.kiwi/dishooks/).
 
-As of September 2024, Dishooks has been purchased around
-
-*
-
-*200
-** times, and
-
-*
-
-*8
-** features, both smaller and larger ones have been added as a result of user requests. It's been a great journey so far where I have learned a lot!
+As of September 2024, Dishooks has been purchased around **200** times, and **8** features, both smaller and larger ones have been added as a result of user requests. It's been a great journey so far where I have learned a lot!
