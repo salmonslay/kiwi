@@ -100,9 +100,10 @@
   {
     "title": "Sonder",
     "description": "An online 2.5D puzzle adventure where two players engage in collaborative puzzle solving and dynamic combat.",
-    "longDescription": "Experience an innovative co-op adventure where two players have to work together.\n\nDuring the two months of full-time work on Sonder I was responsible for all the UI/UX design and implementation, multiplayer, localization, Steamworks, achievements and some gameplay mechanics. The artwork in the gallery is made by [Nora Gate](https://www.artstation.com/noragate).\n\nAs of May 2024, Sonder has been <b>played by over 50 000 unique users on Steam</b>.",
-    "thumbnail": "img/sonder/banner.webp",
+    "longDescription": "An innovative co-op adventure where two players have to work together. Winner of Gamers' Choice in the Swedish Game Awards 2024, and played by over 75 000 unique users on Steam\n\nDuring the two months of full-time work on Sonder I was responsible for all the UI/UX design and implementation, multiplayer, localization, Steamworks, achievements and some gameplay mechanics. The artwork in the gallery is made by [Nora Gate](https://www.artstation.com/noragate).",
+    "thumbnail": "img/sonder/banner awards.webp",
     "images": [
+      "img/sonder/awards.webp",
       "img/sonder/screenshot1.webp",
       "img/sonder/screenshot2.webp",
       "img/sonder/screenshot3.webp",
@@ -131,6 +132,11 @@
       {
         "title": "GitHub",
         "url": "https://github.com/salmonslay/Sonder"
+      },
+      {
+        "title": "Article",
+        "url": "https://www.su.se/institutionen-for-data-och-systemvetenskap/nyheter/ai-bildar-ov%C3%A4ntad-v%C3%A4nskap-med-en-sj%C3%A4l-1.762847",
+        "icon": "fa-regular fa-newspaper"
       }
     ]
   },
