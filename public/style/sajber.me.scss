@@ -39,6 +39,11 @@ body {
     margin: 0 auto 2em auto;
     padding: 0 20px 20px 20px;
 
+    &-wide {
+      @extend .skill-page;
+      max-width: 1000px;
+    }
+
     li[title] {
     }
   }
@@ -54,6 +59,12 @@ body {
   width: 90%;
   margin: 0 auto;
   text-align: center;
+
+  &-fill {
+    width: 100%;
+    max-width: 100%;
+    @extend #banner;
+  }
 
   .social-icons {
     display: flex;

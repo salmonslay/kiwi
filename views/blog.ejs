@@ -33,27 +33,43 @@
 <a id="fork" title="View the source of this website." href="https://github.com/salmonslay/landing" target="_blank">
     <i class="fa-solid fa-code-branch fa-lg"></i>
 </a>
-<div id="banner">
-    <h1><%= metadata.data.title %>
-    </h1>
-    <h2>2024-08-09</h2>
-    <p>
-        <%= metadata.data.summary %>
-    </p>
-    <hr>
+<div class="skill-page-wide">
 
-    <div class="navbar">
-        <a id="button-projects" class="nav-button" href="/">Projects</a>
-        <a id="button-skills" class="nav-button" href="/#skills">Skills</a>
-        <a id="button-courses" class="nav-button" href="/#courses">Education</a>
-        <a id="button-courses" class="nav-button active" href="/blog">Blog</a>
+    <div id="banner-fill" class="force-align-items-left">
+        <h1><%= metadata.data.title %>
+        </h1>
+        <h2><%= metadata.data.date.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'short'
+            }); %></h2>
+        <p>
+            <%= metadata.data.summary %>
+        </p>
+        <h6 class="no-margin">Tags: <%= metadata.data.tags.join(', ') %></h6>
+        <hr>
     </div>
 
-    <hr>
-</div>
-
-<div class="skill-page">
     <%- html %>
+
+    <hr>
+    <div class="footer">
+        <p>
+            Written by Sofia Lindgren in <%= metadata.data.date.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'short'
+            }); %>.
+
+            <% if(metadata.data.date !== metadata.data.updated) { %>
+                Updated <%= metadata.data.updated.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'short'
+                }); %>.
+            <% } %>
+        </p>
+        <a href="/" class="button">Back to the main page</a>
+
+
+    </div>
 </div>
 
 <script>
