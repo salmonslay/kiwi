@@ -20,9 +20,7 @@ router.get('/:id', function (req, res, next) {
             return;
         }
 
-
         response.json().then(json => {
-            console.log(json)
             res.render('blog', {
                 html: json.html,
                 metadata: json.metadata,
