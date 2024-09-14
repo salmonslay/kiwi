@@ -34,6 +34,49 @@
     ]
   },
   {
+    "title": "Sonder",
+    "description": "An online 2.5D puzzle adventure where two players engage in collaborative puzzle solving and dynamic combat.",
+    "longDescription": "An innovative co-op adventure where two players have to work together. <b>Winner of Gamers' Choice</b> in the Swedish Game Awards 2024, and played by over <b>75 000 unique users</b> on Steam\n\nDuring the two months of full-time work on Sonder I was responsible for all the UI/UX design and implementation, multiplayer, localization, Steamworks, achievements and some gameplay mechanics. The artwork in the gallery is made by [Nora Gate](https://www.artstation.com/noragate).",
+    "thumbnail": "img/sonder/banner awards.webp",
+    "images": [
+      "img/sonder/awards.webp",
+      "img/sonder/screenshot1.webp",
+      "img/sonder/screenshot2.webp",
+      "img/sonder/screenshot3.webp",
+      "img/sonder/screenshot4.webp",
+      "img/sonder/screenshot5.webp"
+    ],
+    "starred": true,
+    "school": true,
+    "tags": {
+      "engine": [
+        "Unreal Engine 5"
+      ],
+      "language": [
+        "C++",
+        "Blueprint"
+      ],
+      "framework": [
+        "Steamworks"
+      ]
+    },
+    "links": [
+      {
+        "title": "Steam",
+        "url": "https://store.steampowered.com/app/2692570/Sonder/"
+      },
+      {
+        "title": "GitHub",
+        "url": "https://github.com/salmonslay/Sonder"
+      },
+      {
+        "title": "Article (su.se)",
+        "url": "https://www.su.se/institutionen-for-data-och-systemvetenskap/nyheter/ai-bildar-ov%C3%A4ntad-v%C3%A4nskap-med-en-sj%C3%A4l-1.762847",
+        "icon": "fa-regular fa-newspaper"
+      }
+    ]
+  },
+  {
     "title": "SpaceLeek",
     "description": "A charming and playful 3D-platformer with an emphasis on exploration and fast paced gameplay.",
     "longDescription": "Space Leek is a charming and playful 3D-platformer with an emphasis on exploration and fast paced gameplay. The game is created in Unreal Engine 5 by me and eight friends, and took around two months of full-time work to complete.\n\nI have spent a lot of my time on the game's movement system, collectibles, the saving system and all the UI. A lot of my time was spent to make sure that the UI was responsive, and that it works well with both keyboard, controller or a mix of both.",
@@ -98,45 +141,55 @@
     ]
   },
   {
-    "title": "Sonder",
-    "description": "An online 2.5D puzzle adventure where two players engage in collaborative puzzle solving and dynamic combat.",
-    "longDescription": "An innovative co-op adventure where two players have to work together. Winner of Gamers' Choice in the Swedish Game Awards 2024, and played by over 75 000 unique users on Steam\n\nDuring the two months of full-time work on Sonder I was responsible for all the UI/UX design and implementation, multiplayer, localization, Steamworks, achievements and some gameplay mechanics. The artwork in the gallery is made by [Nora Gate](https://www.artstation.com/noragate).",
-    "thumbnail": "img/sonder/banner awards.webp",
-    "images": [
-      "img/sonder/awards.webp",
-      "img/sonder/screenshot1.webp",
-      "img/sonder/screenshot2.webp",
-      "img/sonder/screenshot3.webp",
-      "img/sonder/screenshot4.webp",
-      "img/sonder/screenshot5.webp"
-    ],
+    "title": "SofMail",
+    "description": "Feature rich email client with support for sending/receiving HTML multipart through SMTP/IMAP, attachments, email folders, flags, and more.",
+    "longDescription": "SofMail is a feature rich email client with support for sending/receiving HTML multipart through SMTP/IMAP, attachments, email folders, flags, and more. As it follows standard protocols it works with any email service, but has extended support for Gmail making use of their folder and flag features.\n\nAwarded best project in the \"Programming for Internet\" course at Stockholm University. :)",
+    "thumbnail": "img/sofmail.png",
     "starred": true,
-    "school": true,
+    "school": false,
     "tags": {
       "engine": [
-        "Unreal Engine 5"
       ],
       "language": [
-        "C++",
-        "Blueprint"
+        "Java"
       ],
       "framework": [
-        "Steamworks"
+        "JavaFX",
+        "JakartaMail"
       ]
     },
     "links": [
       {
-        "title": "Steam",
-        "url": "https://store.steampowered.com/app/2692570/Sonder/"
-      },
-      {
         "title": "GitHub",
-        "url": "https://github.com/salmonslay/Sonder"
-      },
+        "url": "https://github.com/salmonslay/sofmail/"
+      }
+    ]
+  },
+  {
+    "title": "Scareware",
+    "description": "Scareware is a game made for the 2023 DSV game jam. It's a WarioWare-inspired game where you have to complete a series of mini games that progressively get faster.",
+    "longDescription": "WarioWare-inspired game made for the 2023 DSV game jam together with [Nora Gate](https://www.artstation.com/noragate). It was made in Unity in roughly three days and contains ten unique mini games that can be played using only the arrow keys.\n\nI did all the programming in the project and had lots of fun while doing so. The game has a very robust object-oriented architecture and is easily expandable with new mini games - some of them only took a few minutes to implement once the drawn assets were ready!",
+    "thumbnail": "img/scareware/1.webp",
+    "images": [
+      "img/scareware/4.webp",
+      "img/scareware/2.webp",
+      "img/scareware/3.webp",
+      "img/scareware/5.webp"
+    ],
+    "starred": true,
+    "school": false,
+    "tags": {
+      "engine": [
+        "Unity"
+      ],
+      "language": [
+        "C#"
+      ]
+    },
+    "links": [
       {
-        "title": "Article",
-        "url": "https://www.su.se/institutionen-for-data-och-systemvetenskap/nyheter/ai-bildar-ov%C3%A4ntad-v%C3%A4nskap-med-en-sj%C3%A4l-1.762847",
-        "icon": "fa-regular fa-newspaper"
+        "title": "View / download on itch.io",
+        "url": "https://noroalia.itch.io/scareware"
       }
     ]
   },
@@ -168,34 +221,6 @@
       {
         "title": "Trailer",
         "url": "https://youtu.be/iva1U4hRMaQ"
-      }
-    ]
-  },
-  {
-    "title": "Scareware",
-    "description": "Scareware is a game made for the 2023 DSV game jam. It's a WarioWare-inspired game where you have to complete a series of mini games that progressively get faster.",
-    "longDescription": "WarioWare-inspired game made for the 2023 DSV game jam together with [Nora Gate](https://www.artstation.com/noragate). It was made in Unity in roughly three days and contains ten unique mini games that can be played using only the arrow keys.\n\nI did all the programming in the project and had lots of fun while doing so. The game has a very robust object-oriented architecture and is easily expandable with new mini games - some of them only took a few minutes to implement once the drawn assets were ready!",
-    "thumbnail": "img/scareware/1.webp",
-    "images": [
-      "img/scareware/4.webp",
-      "img/scareware/2.webp",
-      "img/scareware/3.webp",
-      "img/scareware/5.webp"
-    ],
-    "starred": true,
-    "school": false,
-    "tags": {
-      "engine": [
-        "Unity"
-      ],
-      "language": [
-        "C#"
-      ]
-    },
-    "links": [
-      {
-        "title": "View / download on itch.io",
-        "url": "https://noroalia.itch.io/scareware"
       }
     ]
   },
