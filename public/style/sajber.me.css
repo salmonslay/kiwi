@@ -295,12 +295,6 @@ body .skill-page pre, body .skill-page-wide pre {
 body .skill-page img, body .skill-page-wide img {
   max-width: 100%;
 }
-body .skill-page .subtitle, body .skill-page-wide .subtitle {
-  font-size: 0.8em;
-  color: #59294f;
-  opacity: 80%;
-  margin: 0.5em 0;
-}
 
 #banner, #banner-fill {
   display: flex;
@@ -496,6 +490,13 @@ footer {
 .blog-gallery-entry a {
   color: inherit;
   text-decoration: none;
+}
+
+.subtitle {
+  font-size: 0.8em;
+  color: #59294f;
+  opacity: 80%;
+  margin: 0.5em 0;
 }
 
 /*# sourceMappingURL=sajber.me.css.map */

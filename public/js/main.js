@@ -191,6 +191,11 @@ function loadBlogs() {
             pillHtml += `<span class="pill color-framework">${tag}</span>`;
         });
 
+        let blogPostDate = new Date(blog.metadata.date).toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'short'
+        });
+
         let blogHtml =
             `
                     <li class="blog-gallery-entry" id="project-${blog.slug}" style="max-width: 1000px!important;">
@@ -203,15 +208,13 @@ function loadBlogs() {
                                     <h3>
                                         ${blog.metadata.title} 
                                     </h3> 
+                                    <h4 class="subtitle">by ${blog.metadata.author}, ${blogPostDate}</h4>
                                     <p class="short-description">${blog.metadata.summary}</p>
                                     <p class="long-description">${blog.metadata.summary}</p>
                                     <div class="toolbar">
                                     <div class="pills">
                                         ${pillHtml}
                                     </div>
-    <!--                                    <div class="buttons">
-                                            <a class="button" href="/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>Read</a>
-                                        </div>-->
                                     </div>
                                 </figcaption>
                             </figure>

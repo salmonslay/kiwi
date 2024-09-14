@@ -51,13 +51,6 @@ body {
     img {
       max-width: 100%;
     }
-
-    .subtitle {
-        font-size: 0.8em;
-      color: $text-color;
-      opacity: 80%;
-      margin: 0.5em 0;
-    }
   }
 }
 
@@ -276,4 +269,11 @@ footer {
 .blog-gallery-entry a {
   color: inherit;
   text-decoration: none;
+}
+
+.subtitle {
+  font-size: 0.8em;
+  color: $text-color;
+  opacity: 80%;
+  margin: 0.5em 0;
 }
