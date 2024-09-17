@@ -53,9 +53,8 @@ fruitwork is built around the idea of components. Every single component has a p
 
 Every single component can have a physics body attached to them, giving them both a collision body and the ability to be affected by gravity / other forces. Collision can either be done using a rectangle or pixel-perfect collision, where rectangle collisions support a threshold parameter to allow for some overlap, and pixel-perfect collisions support an alpha parameter to allow for some transparency.
 
-<pre style="background-color: #22272e;">
-<code class="language-cpp">
-bool rectCollidesWith(const Sprite *other, int threshold = 0) const;
+<pre>
+<code class="language-cpp">bool rectCollidesWith(const Sprite *other, int threshold = 0) const;
 
 bool pixelCollidesWith(const Sprite *other, Uint8 alpha = 10) const;
 </code>
