@@ -48,7 +48,7 @@ body {
       padding: 0 1em;
     }
 
-    img {
+    img, video {
       max-width: 100%;
     }
   }
@@ -247,7 +247,7 @@ a.button {
 
 #home-icon {
   @media screen and (min-width: 768px) {
-    position: absolute;
+    position: fixed;
     left: 0.5em;
     top: 0.5em;
     padding: 1em;

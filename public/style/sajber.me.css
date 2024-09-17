@@ -292,7 +292,7 @@ body .skill-page pre, body .skill-page-wide pre {
   overflow-x: auto;
   padding: 0 1em;
 }
-body .skill-page img, body .skill-page-wide img {
+body .skill-page img, body .skill-page-wide img, body .skill-page video, body .skill-page-wide video {
   max-width: 100%;
 }
 
@@ -467,7 +467,7 @@ a.button.popup-button {
 
 @media screen and (min-width: 768px) {
   #home-icon {
-    position: absolute;
+    position: fixed;
     left: 0.5em;
     top: 0.5em;
     padding: 1em;
