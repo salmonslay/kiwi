@@ -5,16 +5,16 @@
     <meta charset="utf-8">
     <title><%= metadata.author %> | <%= metadata.title %></title>
     <meta name="title" content="<%= metadata.author %> | <%= metadata.title %>"/>
-    <meta name="description" content="<%=metadata.summary%>"/>
+    <meta name="description" content="<%= metadata.summary %>"/>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://sofia.kiwi/blog/<%= slug %>"/>
     <meta property="og:title" content="<%= metadata.author %> | <%= metadata.title %>"/>
-    <meta property="og:description" content="<%=metadata.summary%>"/>
-    <meta property="og:image" content="<%=metadata.thumbnail%>"/>
+    <meta property="og:description" content="<%= metadata.summary %>"/>
+    <meta property="og:image" content="<%= metadata.thumbnail %>"/>
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image:src" content="<%=metadata.thumbnail%>">
+    <meta name="twitter:image:src" content="<%= metadata.thumbnail %>">
     <meta name="theme-color" content="#CE4A5C">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,10 +41,7 @@
     <div id="banner-fill" class="force-align-items-left">
         <h1><%= metadata.title %>
         </h1>
-        <h2 class="subtitle"><%=metadata.author%>, <%= new Date(metadata.date).toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'short'
-            }); %></h2>
+        <h2 class="subtitle"><%= metadata.author %>, <%= getDate(metadata.date, true); %></h2>
         <h6 class="no-margin">Tags: <%= metadata.tags.join(', ') %></h6>
         <hr>
     </div>
@@ -54,16 +51,10 @@
     <hr>
     <div class="footer">
         <p>
-            Written by <%= metadata.author %> in <%= new Date(metadata.date).toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'short'
-            }); %>.
+            Written by <%= metadata.author %> in <%= getDate(metadata.date); %>.
 
             <% if(metadata.date !== metadata.updated) { %>
-                Updated <%= new Date(metadata.updated).toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'short'
-                }); %>.
+                Updated <%= getDate(metadata.updated); %>.
             <% } %>
         </p>
         <a href="/#blog" class="button">Back to the main page</a>
@@ -74,6 +65,15 @@
 
 <script>hljs.initHighlightingOnLoad();</script>
 
+<%
+function getDate(d, includeDay = false) {
+    return new Date(d).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: includeDay ? 'numeric' : undefined
+    });
+}
+%>
 
 </body>
 

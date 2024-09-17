@@ -193,7 +193,8 @@ function loadBlogs() {
 
         let blogPostDate = new Date(blog.metadata.date).toLocaleDateString('en-US', {
             year: 'numeric',
-            month: 'short'
+            month: 'short',
+            day: 'numeric'
         });
 
         let blogHtml =
