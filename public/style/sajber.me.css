@@ -273,6 +273,15 @@ body h1 {
   font-weight: bold;
   margin: 0;
 }
+body h1 .pronouns {
+  font-size: 0.5em;
+  font-weight: normal;
+  opacity: 65%;
+}
+body h1.welcome {
+  margin-top: 0.5em;
+  line-height: 0.75;
+}
 body h2, body h3, body h4, body h5, body h6 {
   color: #7c4170;
 }

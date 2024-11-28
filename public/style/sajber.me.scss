@@ -19,6 +19,17 @@ body {
     font-size: 2em;
     font-weight: bold;
     margin: 0;
+
+    .pronouns {
+      font-size: 0.5em;
+      font-weight: normal;
+      opacity: 65%;
+    }
+
+    &.welcome {
+      margin-top: 0.5em;
+      line-height: 0.75;
+    }
   }
 
   h2, h3, h4, h5, h6 {
