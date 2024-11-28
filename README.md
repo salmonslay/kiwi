@@ -2,7 +2,7 @@
 
 This is a rework of my personal landing page for my projects and other stuff (earlier [salmonslay/landing](https://github.com/salmonslay/landing)). It follows a portfolio / CV style and is built with [Node.js](https://nodejs.org/en), [Express.js](https://expressjs.com/), [EJS](https://ejs.co/), [SASS](https://sass-lang.com/) and the [Font Awesome](https://fontawesome.com/) icon font.
 
-This page is not live yet, but the old one can be found [here](https://sofia.kiwi/).
+This page is live [here](https://sofia.kiwi/).
 
 ## License / Using the template
 
@@ -83,10 +83,21 @@ The links are shown as buttons on the project card. A link object only has two k
 | url   | string | The URL to open when pressing the button                                             | x        |
 | icon  | string | An optional FontAwesome icon class that will replace the icon generated from `title` |          |
 
-All links have their own icon, which is determined by the title. If a title contains one of the following words, the corresponding icon will be used. If no icon is found, the default chain icon will be used. 
+All links have their own icon, which is determined by the title. If a title contains one of the following words, the corresponding icon will be used. If no icon is found, the default chain icon will be used.
 
 `github, view, unity, documentation, video, leaderboard, trailer, album, steam, download, google play, blog`
 
 ### Blogs
 
-WIP
+Blog posts can be added by creating markdown files in the ``public/blogs/`` directory. The markdown should start with a front matter block containing a few keys listed below. The rest of the markdown file will be rendered as the blog post. None of the following fields are actually required (will be filled with placeholders), so the "Recommended" column is more of a guideline.
+
+| Key       | Value         | Description                                           | Recommended |
+|-----------|---------------|-------------------------------------------------------|-------------|
+| title     | string        | The title of the blog post.                           | x           |
+| date      | ISO 8601 date | The timestamp of when the post was created            | x           |
+| updated   | ISO 8601 date | The timestamp of when the post was last updated       |             |
+| draft     | boolean       | True if the post should be hidden from the front page |             |
+| author    | string        | Name of the author                                    | x           |
+| tags      | string[]      | Array of blog tags (used to filter posts)             | x           |
+| summary   | string        | A shorter summary of the post shown on the front page | x           |
+| thumbnail | string        | Path to a thumbnail                                   | x           |
