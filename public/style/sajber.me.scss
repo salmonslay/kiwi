@@ -282,6 +282,20 @@ footer {
   text-decoration: none;
 }
 
+#page-publications {
+  h3 {
+    font-weight: normal;
+  }
+
+  ol li a figure figcaption p {
+    white-space: normal !important;
+  }
+
+  ol.gallery li figure {
+    height: 100%;
+  }
+}
+
 .subtitle {
   font-size: 0.8em;
   color: $text-color;

@@ -162,7 +162,7 @@ function loadProjects() {
                                     </div>
                                     <div class="buttons">
                                         ${buttonHtml}
-                                        ${project.markdown ? `<a class="popup-button button" onclick="openPopup('project-${projectId}');">Read more...</a>` : ``}
+                                        ${project.blogSlug ? `<a class="popup-button button" href="${project.blogSlug}">Read more...</a>` : (project.markdown ? `<a class="popup-button button" onclick="openPopup('project-${projectId}');">Read more...</a>` : ``)}
                                     </div>
                                 </div>
                             </figcaption>
@@ -225,7 +225,7 @@ function loadBlogs() {
 
         document.getElementById("blog-gallery").innerHTML += blogHtml;
     });
-    document.getElementById("loading").remove();
+    document.getElementById("blog-loading").remove();
 
 }
 

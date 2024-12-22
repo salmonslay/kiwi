@@ -501,6 +501,16 @@ footer {
   text-decoration: none;
 }
 
+#page-publications h3 {
+  font-weight: normal;
+}
+#page-publications ol li a figure figcaption p {
+  white-space: normal !important;
+}
+#page-publications ol.gallery li figure {
+  height: 100%;
+}
+
 .subtitle {
   font-size: 0.8em;
   color: #59294f;
