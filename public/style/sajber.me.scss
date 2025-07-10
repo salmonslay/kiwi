@@ -107,11 +107,16 @@ body {
 }
 
 .navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
   a {
     color: $text-secondary-color;
     text-decoration: none;
     padding: 10px;
-    margin: 10px;
     cursor: pointer;
 
     &:hover {
@@ -176,7 +181,7 @@ body {
   }
 }
 
-a.button {
+a.button, button {
   display: inline-block;
   padding: 0.5em 0.5em;
   margin: 0.2em;
@@ -186,6 +191,7 @@ a.button {
   font-size: 0.8em;
   text-decoration: none;
   min-width: 50px;
+  border: none;
 
   &:hover {
     background-color: darken($accent-color, 10%);
@@ -301,4 +307,34 @@ footer {
   color: $text-color;
   opacity: 80%;
   margin: 0.5em 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 95%;
+  width: 600px;
+  margin: 0 auto;
+
+  label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: $text-secondary-color;
+  }
+
+  input, textarea, select {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border: 1px solid $text-secondary-color;
+    background-color: $background-color;
+    color: $text-color;
+
+    &:focus {
+      border-color: $accent-color;
+      outline: none;
+    }
+  }
 }

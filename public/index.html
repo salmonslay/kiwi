@@ -94,7 +94,8 @@
         <a id="button-skills" class="nav-button" onclick="setPage('skills')">Skills</a>
         <a id="button-courses" class="nav-button" onclick="setPage('courses')">Education</a>
         <a id="button-blog" class="nav-button" onclick="setPage('blog')">Blog</a>
-        <a id="button-publications" class="nav-button" onclick="setPage('publications');">Publications</a>
+        <a id="button-contact" class="nav-button" onclick="setPage('contact')">Contact</a>
+        <!--a id="button-publications" class="nav-button" onclick="setPage('publications');">Publications</a-->
     </div>
 
     <hr>
@@ -324,6 +325,30 @@
             </a>
         </li>
     </ol>
+</div>
+
+<div class="page d-none" id="page-contact">
+    <div class="skill-page">
+        <form target="_blank" action="https://formsubmit.co/contact@sofia.kiwi" method="POST">
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" name="name" class="form-control" placeholder="Name (optional)">
+                    </div>
+                    <div class="col">
+                        <input type="email" name="email" class="form-control" placeholder="Email (also optional)">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Your message (unfortunately not optional)" class="form-control" name="message" rows="10" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+        </form>
+
+        <p>Prefer to send an email yourself? hi at sofia.kiwi</p>
+
+    </div>
 </div>
 </body>
 

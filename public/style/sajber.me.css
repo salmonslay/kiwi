@@ -340,11 +340,17 @@ body .skill-page img, body .skill-page-wide img, body .skill-page video, body .s
   margin: 1em 0;
 }
 
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .navbar a {
   color: #7c4170;
   text-decoration: none;
   padding: 10px;
-  margin: 10px;
   cursor: pointer;
 }
 .navbar a:hover {
@@ -399,7 +405,7 @@ body .skill-page img, body .skill-page-wide img, body .skill-page video, body .s
   color: #ce4a5c;
 }
 
-a.button {
+a.button, button {
   display: inline-block;
   padding: 0.5em 0.5em;
   margin: 0.2em;
@@ -409,11 +415,12 @@ a.button {
   font-size: 0.8em;
   text-decoration: none;
   min-width: 50px;
+  border: none;
 }
-a.button:hover {
+a.button:hover, button:hover {
   background-color: #b43143;
 }
-a.button.popup-button {
+a.button.popup-button, button.popup-button {
   right: 0;
   position: absolute;
 }
@@ -516,6 +523,33 @@ footer {
   color: #59294f;
   opacity: 80%;
   margin: 0.5em 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 95%;
+  width: 600px;
+  margin: 0 auto;
+}
+form label {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #7c4170;
+}
+form input, form textarea, form select {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  border: 1px solid #7c4170;
+  background-color: #ffe7e7;
+  color: #59294f;
+}
+form input:focus, form textarea:focus, form select:focus {
+  border-color: #ce4a5c;
+  outline: none;
 }
 
 /*# sourceMappingURL=sajber.me.css.map */
