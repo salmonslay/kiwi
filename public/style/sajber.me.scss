@@ -302,6 +302,35 @@ footer {
   }
 }
 
+#work-gallery {
+  .work-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+
+    .job-icon {
+      flex-shrink: 0;
+      width: 3rem;
+      height: 3rem;
+      object-fit: contain;
+      border-radius: 0.5rem;
+      margin-top: 0.1em;
+    }
+
+    .work-header-text {
+      min-width: 0;
+
+      h3 {
+        margin: 0 0 0.2em 0;
+      }
+
+      .subtitle {
+        margin: 0.25em 0;
+      }
+    }
+  }
+}
+
 .subtitle {
   font-size: 0.8em;
   color: $text-color;

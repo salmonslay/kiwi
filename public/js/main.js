@@ -1,7 +1,7 @@
 window.onload = function () {
     // set active page
     if (window.location.hash === "")
-        setPage("projects");
+        setPage("work");
     else
         setPage(window.location.hash.substring(1));
 
@@ -16,7 +16,9 @@ window.onload = function () {
     let projectAttempts = 0;
     const projectReadyListener = () => {
         if (typeof data !== 'undefined') {
-            return loadProjects();
+            loadWork();
+            loadProjects();
+            return;
         } else {
             projectAttempts++;
         }
@@ -51,7 +53,7 @@ function setPage(page) {
     p.classList.remove("d-none");
     b.classList.add("active");
 
-    if (page !== "projects")
+    if (page !== "work")
         history.replaceState(undefined, undefined, "#" + page);
     else
         history.replaceState(undefined, undefined, window.location.pathname);
@@ -88,9 +90,54 @@ const buttonIcons = {
 }
 
 const projects = {};
+const jobs = {};
+
+function loadWork() {
+    data.work.forEach(job => {
+        if (job.hidden)
+            return;
+
+        // a project id is the project title with all non-alphanumeric characters removed and spaces replaced with dashes
+        let jobId = job.company.replace(/ /g, "-")
+            .replace(/[^a-zA-Z0-9\-]/g, "")
+            .toLowerCase();
+
+        let iconHtml = job.icon ? `<img class="job-icon" src="${job.icon}" alt="">` : "";
+
+        let jobHtml =
+            `
+                    <li id="project-${jobId}" class="gallery-item">
+                        <figure>                            
+                            <figcaption>
+                                <div class="work-header">
+                                    ${iconHtml}
+                                    <div class="work-header-text">
+                                        <h3>${job.role}</h3>
+                                        <h4 class="subtitle">${job.company}</h4>
+                                        <h4 class="subtitle">${job.period}</h4>
+                                    </div>
+                                </div>
+                                <p class="work-description">${mdLinksToHtml(job.description)}</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    `
+
+        // strip away html-comments
+        jobHtml = jobHtml.replace(/<!--[\s\S]*?-->/g, "");
+
+        // add active to the first dot
+        jobHtml = jobHtml.replace(/class="dot"/, "class=\"dot active\"");
+
+        document.getElementById("work-gallery").innerHTML += jobHtml;
+
+        jobs[jobId] = jobs;
+    });
+    document.getElementById("loading-work").remove();
+}
 
 function loadProjects() {
-    data.forEach(project => {
+    data.projects.forEach(project => {
         if (project.hidden)
             return;
 
@@ -132,7 +179,7 @@ function loadProjects() {
 
         let projectHtml =
             `
-                    <li id="project-${projectId}">
+                    <li id="project-${projectId}" class="gallery-item">
                         <figure>
                             <div class="thumbnail-container">
                                 <img class="thumbnail" src="${project.thumbnail}" alt="${project.title}">

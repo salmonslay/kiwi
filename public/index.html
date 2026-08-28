@@ -14,6 +14,7 @@
         }
         request.send();
 
+        /*
         let blogRequest = new XMLHttpRequest();
         let blogData = undefined;
         blogRequest.open("GET", "api/posts?sort=date", true);
@@ -23,6 +24,7 @@
             }
         }
         blogRequest.send();
+         */
     </script>
 
     <meta charset="utf-8">
@@ -66,7 +68,7 @@
     </h1>
     <p>
         I'm a game developer at
-        <a href="https://filimundus.se/en/" target="_blank">Filimundus</a> with a strong interest to learn new things. Also a generalist with a focus on object-oriented design, game- and web development. If that makes sense.
+        <a href="https://filimundus.se/en/" target="_blank">Filimundus</a> with a strong passion for backend systems and object-oriented programming. A fast learner with broad IT expertise and a genuine curiosity for technology.
     </p>
 
     <div class="social-icons">
@@ -82,18 +84,19 @@
             <i class="fa-brands fa-linkedin fa-2xl"></i>
         </a>
 
-        <a class="icon" href="https://stackoverflow.com/users/11420970" target="_blank" title="Stack Overflow">
-            <i class="fa-brands fa-stack-overflow fa-2xl"></i>
+        <a class="icon" href="/resume.pdf" target="_blank" title="LinkedIn">
+            <i class="fa-solid fa-file fa-2xl"></i>
         </a>
     </div>
 
     <hr>
 
     <div class="navbar">
-        <a id="button-projects" class="nav-button active" onclick="setPage('projects')">Projects</a>
+        <a id="button-work" class="nav-button active" onclick="setPage('work')">Work</a>
+        <a id="button-projects" class="nav-button" onclick="setPage('projects')">Projects</a>
         <a id="button-skills" class="nav-button" onclick="setPage('skills')">Skills</a>
         <a id="button-courses" class="nav-button" onclick="setPage('courses')">Education</a>
-        <a id="button-blog" class="nav-button" onclick="setPage('blog')">Blog</a>
+        <!--a id="button-blog" class="nav-button" onclick="setPage('blog')">Blog</a-->
         <a id="button-contact" class="nav-button" onclick="setPage('contact')">Contact</a>
         <!--a id="button-publications" class="nav-button" onclick="setPage('publications');">Publications</a-->
     </div>
@@ -148,7 +151,11 @@
         <li id="loading">Loading...</li>
     </ol>
 </div>
-
+<div class="page" id="page-work">
+    <ol class="gallery" id="work-gallery">
+        <li id="loading-work">Loading...</li>
+    </ol>
+</div>
 <div class="page" id="page-blog">
     <ol class="gallery" id="blog-gallery">
         <li id="blog-loading">Loading...</li>
@@ -162,8 +169,6 @@
             <li>C#</li>
             <li>C++</li>
             <li>Python</li>
-            <li>Java</li>
-            <li>HTML / EJS / SCSS</li>
             <li>JavaScript</li>
             <li class="actual-language">Swedish - Native
                 <i title="It's a language. Deal with it." class="fa-regular fa-circle-question"></i>
@@ -171,38 +176,42 @@
             <li class="actual-language">English - Proficient</li>
         </ul>
 
-        <h1>Frameworks / engines</h1>
+        <h1>Technologies</h1>
         <ul>
+            <li>Unity</li>
+            <li>Unreal</li>
             <li>Node.js</li>
             <li>Express</li>
             <li>SDL2</li>
             <li>MySQL</li>
-            <li>GraphQL</li>
         </ul>
 
-        <h1>Tools</h1>
+        <h1>Tools & Software</h1>
         <ul>
             <li>Git
                 <i title="I use a mix of command line and the integrated VCS in my IDEs." class="fa-regular fa-circle-question"></i>
             </li>
-            <li>Unity</li>
-            <li>Rider / WebStorm / IntelliJ IDEA</li>
+            <li>Rider / WebStorm / CLion</li>
             <li>Visual Studio / VSCode
                 <i title="I am currently using JetBrains IDEs for all my development, but I've used VS/VSC plenty in the past." class="fa-regular fa-circle-question"></i>
             </li>
             <li>Vegas Pro</li>
             <li>Adobe Photoshop</li>
-            <li>Maya</li>
-            <li>SSH
-                <i title="Both my personal and server computer has OpenSSH on them." class="fa-regular fa-circle-question"></i>
-            </li>
         </ul>
 
-        <h1>Other</h1>
+        <h1>Cloud & Infrastructure</h1>
         <ul>
-            <li>Windows</li>
-            <li>Linux</li>
+            <li>Amazon Web Services</li>
+            <li>Google Cloud Platform</li>
+        </ul>
+        <h1>Publishing</h1>
+        <ul>
             <li>Steamworks</li>
+            <li>Nintendo eShop</li>
+            <li>Google Play</li>
+            <li>Apple App Store</li>
+            <li>Amazon Appstore</li>
+            <li>Epic Games Mobile Store</li>
         </ul>
     </div>
 </div>
@@ -219,7 +228,7 @@
             <li>Object-Oriented Analysis and Design</li>
             <li>Scientific Methodology and Communication</li>
             <li>Game Based Learning (JS)</li>
-            <li>Database Methodology (SQL)</li>
+            <li>Database Methodology</li>
             <li>Human-computer interaction</li>
             <li>Mobile Application Development (C#)</li>
             <li>Scientific Writing</li>
@@ -343,11 +352,10 @@
             <div class="form-group">
                 <textarea placeholder="Your message (unfortunately not optional)" class="form-control" name="message" rows="10" required></textarea>
             </div>
-            <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+            <button type="submit" class="btn btn-lg btn-dark btn-block">Send it!</button>
         </form>
 
-        <p>Prefer to send an email yourself? hi at sofia.kiwi</p>
-
+        <p>Prefer to send an email yourself? Fair enough. hi at sofia.kiwi</p>
     </div>
 </div>
 </body>

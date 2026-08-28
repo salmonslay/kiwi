@@ -8,9 +8,35 @@ This page is live [here](https://sofia.kiwi/).
 
 MIT. Feel free to use the template for your own landing page. Just fork the repository and change the content to your needs.
 
-### JSON structure
+## JSON structure
 
-The projects on the page are stored in the `public/projects.json` file. The structure is as follows:
+### Work
+
+The entries under the work tab are stored in the
+`public/projects.json` file. The structure is as follows:
+
+```json
+{
+  "company": "Stockholm University",
+  "role": "Teaching Assistant",
+  "icon": "img/work/su.webp",
+  "period": "Part-time · Jan 2024 - Apr 2024",
+  "description": "bla bla ..."
+}
+```
+
+| Key         | Value  | Description                            | Required |
+|-------------|--------|----------------------------------------|----------|
+| company     | string | The name of the company                | x        |
+| role        | string | The role you had at the company        | x        |
+| icon        | string | Path to an icon / logo for the company |          |
+| period      | string | Employment type + start/end date       | x        |
+| description | string | A description of the role              |          |
+
+### Projects
+
+The projects on the page are stored in the
+`public/projects.json` file. The structure is as follows:
 
 ```json
 {
@@ -89,7 +115,8 @@ All links have their own icon, which is determined by the title. If a title cont
 
 ### Blogs
 
-Blog posts can be added by creating markdown files in the ``public/blogs/`` directory. The markdown should start with a front matter block containing a few keys listed below. The rest of the markdown file will be rendered as the blog post. None of the following fields are actually required (will be filled with placeholders), so the "Recommended" column is more of a guideline.
+Blog posts can be added by creating markdown files in the
+``public/blogs/`` directory. The markdown should start with a front matter block containing a few keys listed below. The rest of the markdown file will be rendered as the blog post. None of the following fields are actually required (will be filled with placeholders), so the "Recommended" column is more of a guideline.
 
 | Key       | Value         | Description                                           | Recommended |
 |-----------|---------------|-------------------------------------------------------|-------------|

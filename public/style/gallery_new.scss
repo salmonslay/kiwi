@@ -5,14 +5,14 @@
     justify-items: center;
     padding: 0 20px 100px 20px; // 100 to add some spacing under everything
 
-    li {
+    li.gallery-item {
       background: $foreground-color;
       border-radius: 15px;
       box-shadow: 4px 5px 5px rgb(0 0 0 / 10%);
       -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
       transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-      max-width: 1300px;
-
+      max-width: 1200px;
+      width: 100%;
       margin: 1.5em auto;
 
       &:after {
@@ -52,7 +52,8 @@
             z-index: 10;
             display: flex;
             justify-content: center;
-            left: 50%; transform: translateX(-50%);
+            left: 50%;
+            transform: translateX(-50%);
             margin: auto;
             padding: 0.3em;
             background-color: rgba(0, 0, 0, 0.6);
@@ -147,6 +148,10 @@
             &.long-description {
               white-space: pre-wrap;
             }
+
+            &.work-description {
+              white-space: pre-wrap;
+            }
           }
 
           .toolbar {
@@ -173,6 +178,14 @@
             }
           }
         }
+      }
+    }
+
+    &#work-gallery li.gallery-item figure {
+      height: auto;
+
+      figcaption {
+        height: auto;
       }
     }
   }
