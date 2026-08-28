@@ -270,6 +270,23 @@
   margin: 0 !important;
 }
 
+a {
+  color: #A63A50;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+a:hover, a:focus {
+  color: #8B2E42;
+  text-decoration-color: #8B2E42;
+}
+a:active {
+  color: #6E2233;
+}
+a:visited {
+  color: #6D4C5B;
+}
+
 html {
   height: 100%;
   scrollbar-gutter: stable both-edges;

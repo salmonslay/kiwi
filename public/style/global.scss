@@ -20,3 +20,24 @@
 .no-margin {
   margin: 0 !important;
 }
+
+a {
+  color: $link-color;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration-color: $link-hover-color;
+  }
+
+  &:active {
+    color: $link-active-color;
+  }
+
+  &:visited {
+    color: $link-visited-color;
+  }
+}
