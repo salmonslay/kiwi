@@ -765,14 +765,14 @@
       "role": "Teaching Assistant",
       "icon": "img/work/su.webp",
       "period": "Part-time · Jan 2024 - Apr 2024",
-      "description": "At Stockholm University, I assisted students with Git, C# and augmented reality for accessibility through Unity. Their goal was to build an app implementing AR to help people with disabilities solve one problem. I helped students with their code, gave feedback on their projects, and had some talks."
+      "description": "At Stockholm University, I assisted students with Git, C#, and augmented reality (AR) development in Unity, with a focus on accessibility. Their goal was to build an AR application that helps people with disabilities solve a specific problem. I supported students with coding, provided feedback on their projects, and gave presentations and talks on relevant topics."
     },
     {
       "company": "Appen",
       "role": "Contractor",
       "icon": "img/work/appen.jpg",
       "period": "Contract · Jul 2019 - Feb 2024",
-      "description": "Did long-term contract work for some undisclosed FAANG companies. The workload varied between 30-60 hours (~25%) per month depending on the client."
+      "description": "Long-term contract work for some undisclosed FAANG companies."
     },
     {
       "company": "Drottning Blankas Gymnasieskola",
